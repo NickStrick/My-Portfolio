@@ -5,7 +5,7 @@ const ProjectList = (props) => {
 
     return (
 
-        <div classname="projects">
+        <div className="projects">
             {props.projects.map(project =>
                 <Project project={project} />
             )}

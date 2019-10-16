@@ -30,10 +30,12 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <Home />
-      </header>
-      <ProjectList projects={projects} />
+      <div className="container">
+        <header className="App-header">
+          <Home />
+        </header>
+        <ProjectList projects={projects} />
+      </div>
     </div>
   );
 }
