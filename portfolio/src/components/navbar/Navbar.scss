@@ -1,0 +1,31 @@
+
+.nav-back{
+    z-index: 1;
+    position: fixed;
+    opacity: .95;
+    width: 100%;
+    color: white;
+    background: #3b424e;
+    padding: 20px;
+    box-shadow: 2px 4px 8px #76E7B3;
+    .nav-bar{
+        margin: 0 auto;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-content: flex-end;
+        img{
+            width: 50px;
+        }
+        .nav-list{
+            display: flex;
+            width: 30%;
+            justify-content: flex-end;
+            align-items: flex-end;
+            .nav-item{
+                margin-left: 10%;
+            }
+        }
+
+    }
+}
