@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.scss';
 import Home from './components/Home.js';
 import ProjectList from './components/Project List/ProjectList.js';
+import Navbar from './components/navbar/Navbar.js';
 
 function App() {
   const [projects] = useState([
@@ -30,7 +31,9 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar />
       <div className="container">
+
         <header className="App-header">
           <Home />
         </header>
