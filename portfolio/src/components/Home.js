@@ -9,7 +9,7 @@ class Home extends React.Component {
 
             <React.Fragment>
                 <h1>Nick Stricker</h1>
-                <p>A programmer at mind</p>
+                <p>Technology in the spirit, puzzles on the mind, code in my veins.</p>
 
             </React.Fragment>
         );
