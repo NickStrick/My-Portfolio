@@ -1,9 +1,15 @@
+
+
 *{
   box-sizing: border-box;
 }
 .App {
-  background-color: #282c34;
+  background-image: url('./images/image2vector.svg');
+  background-color: #cccccc;
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
   min-height: 100vh;
+
 }
 
 
@@ -11,7 +17,7 @@
 .App-header {
   background-color: #282c34;
   min-height: 600px;
-  margin-left: 10%;
+  margin-left: 2%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -20,8 +26,9 @@
   color: white;
 }
 .container{
+  background-color: #282c34;
   margin: 0 auto;
-  max-width: 1650px;
+  max-width: 1300px;
 }
 button{
   background: white;
@@ -38,14 +45,14 @@ button:hover{
 
 // # project styling
 .projects{
-  margin: 0 10%;
+  margin: 0 2%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   color: white;
   .item{
     border-radius: 12px;
-    width:40%;
+    width:46%;
     background: #363e3f;
     margin-bottom: 50px;
     img{
