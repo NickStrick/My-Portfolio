@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../../logo.svg';
 import './Navbar.scss'
 
-const Project = (props) => {
+const Navbar = (props) => {
     return (
         <div className='nav-back'>
             <div className="nav-bar">
@@ -18,4 +18,4 @@ const Project = (props) => {
 }
 
 
-export default Project;
+export default Navbar;

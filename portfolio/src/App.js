@@ -4,6 +4,7 @@ import './App.scss';
 import Home from './components/Home.js';
 import ProjectList from './components/Project List/ProjectList.js';
 import Navbar from './components/navbar/Navbar.js';
+import Contactinfo from './components/ContactInfo/Contactinfo.js';
 
 function App() {
   const [projects] = useState([
@@ -38,6 +39,7 @@ function App() {
           <Home />
         </header>
         <ProjectList projects={projects} />
+        <Contactinfo />
       </div>
     </div>
   );
