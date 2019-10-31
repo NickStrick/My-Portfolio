@@ -34,7 +34,7 @@ function App() {
       <Navbar />
       <div className="container">
 
-        <header className="App-header">
+        <header className="App-header" aria-label={'page-header'}>
           <Home />
         </header>
         <ProjectList projects={projects} />
