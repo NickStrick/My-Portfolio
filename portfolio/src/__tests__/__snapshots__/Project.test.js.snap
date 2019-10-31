@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project tests renders without crashing 1`] = `
+<div
+  className="item"
+>
+  <img
+    src="pfp.jpg"
+  />
+  <div
+    className="info"
+  >
+    <h2
+      className="title"
+    >
+      Project test
+    </h2>
+    <p
+      aria-label="project-description"
+    >
+      im making a description for my test!!!!
+    </p>
+    <button>
+      &gt;    Learn More
+    </button>
+  </div>
+</div>
+`;
