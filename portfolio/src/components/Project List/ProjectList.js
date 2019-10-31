@@ -6,8 +6,8 @@ const ProjectList = (props) => {
     return (
 
         <div className="projects">
-            {props.projects.map(project =>
-                <Project project={project} />
+            {props.projects.map((project, index) =>
+                <Project project={project} key={index} />
             )}
 
         </div>
