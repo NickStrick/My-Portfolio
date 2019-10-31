@@ -35,6 +35,7 @@ const Contactinfo = (props) => {
                 <div className='contact-div'>
                     {/* <label></label> */}
                     <input
+                        aria-label={'first-name'}
                         value={firstName}
                         onChange={handleChange}
                         placeholder='First name'
@@ -50,6 +51,7 @@ const Contactinfo = (props) => {
                 <div className='contact-div'>
                     {/* <label></label> */}
                     <input
+                        aria-label={'last-name'}
                         value={number}
                         onChange={handleChange}
                         placeholder='Phone Number'
@@ -63,6 +65,7 @@ const Contactinfo = (props) => {
                     />
                 </div>
                 <textarea
+                    aria-label={'contact-msg'}
                     value={msg}
                     onChange={handleChange}
                     placeholder='Type your message here'
