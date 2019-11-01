@@ -30,7 +30,7 @@ const Contactinfo = (props) => {
 
     return (
 
-        <div className="contact-section"><label>Send me a message!</label>
+        <div className="contact-section" id='contact-info'><label>Send me a message!</label>
             <form className='contact-form'>
 
                 <div className='contact-div'>
