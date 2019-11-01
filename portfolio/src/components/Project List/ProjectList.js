@@ -5,7 +5,7 @@ const ProjectList = (props) => {
 
     return (
 
-        <div className="projects">
+        <div className="projects" id='portfolio'>
             {props.projects.map((project, index) =>
                 <Project project={project} key={index} />
             )}
