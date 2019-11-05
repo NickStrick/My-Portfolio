@@ -1,0 +1,27 @@
+.featured-projects{
+    margin: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+    .item{
+      border-radius: 12px;
+      width:46%;
+      background: #363e3f;
+      margin-bottom: 50px;
+      img{
+        width: 100%;
+      }
+      .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        button{
+          align-self: flex-end;
+        }
+  
+      }
+  
+    }
+  }
