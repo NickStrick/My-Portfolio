@@ -4,7 +4,7 @@ const Project = (props) => {
     if (!(props.project.name)) {
         props.project.name = 'ERROR'
     }
-    const { img, description, name } = props.project
+    const { img, description, name, link } = props.project
 
     return (
 
@@ -13,7 +13,7 @@ const Project = (props) => {
             <div className="info">
                 <h2 className='title'>{name}</h2>
                 <p aria-label={'project-description'}>{description}</p>
-                <button>> &nbsp; &nbsp;Learn More</button>
+                <button target="_blank" onClick={() => window.open(link)}>> &nbsp; &nbsp;Learn More</button>
             </div>
 
         </div>
