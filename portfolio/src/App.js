@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
+import riyLogo from './images/RIY.png'
 import './App.scss';
 import Home from './components/Home.js';
 import ProjectList from './components/Project List/ProjectList.js';
@@ -8,24 +9,28 @@ import Contactinfo from './components/ContactInfo/Contactinfo.js';
 
 const pData = [
   {
-    name: "Project one",
+    name: "Review It Yourself",
     description: 'now this was a project that was really fun to do! i worked on it with a team of a few people , go take a look!',
-    img: logo
+    img: riyLogo,
+    link: 'https://how-tutor.netlify.com/'
   },
   {
     name: "Project two",
     description: 'now this was a project that was really fun to do! i worked on it with a team of a few people , go take a look!',
-    img: logo
+    img: logo,
+    link: 'https://github.com/NickStrick?tab=repositories'
   },
   {
     name: "Project three",
     description: 'now this was a project that was really fun to do! i worked on it with a team of a few people , go take a look!',
-    img: logo
+    img: logo,
+    link: 'https://github.com/NickStrick?tab=repositories'
   },
   {
     name: "Project four",
     description: 'now this was a project that was really fun to do! i worked on it with a team of a few people , go take a look!',
-    img: logo
+    img: logo,
+    link: 'https://github.com/NickStrick?tab=repositories'
   },
 ]
 
