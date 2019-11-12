@@ -13,7 +13,10 @@ const Project = (props) => {
             <div className="info">
                 <h2 className='title'>{name}</h2>
                 <p aria-label={'project-description'}>{description}</p>
-                <button target="_blank" onClick={() => window.open(link)}>> &nbsp; &nbsp;Learn More</button>
+                <div className='project-links'>
+                    <button target="_blank" onClick={() => window.open(link)}>Github</button>
+                    {props.project.deployed && <button target="_blank" onClick={() => window.open(props.project.deployed)}>Site</button>}</div>
+
             </div>
 
         </div>
