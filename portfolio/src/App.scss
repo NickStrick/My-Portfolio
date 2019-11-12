@@ -50,6 +50,20 @@ button:hover{
   flex-wrap: wrap;
   justify-content: space-between;
   color: white;
+  .port-head{
+    width: 100%;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    margin:  15px 0;
+    padding: 10px;
+    font-size: 1.9rem;
+    text-align: center;
+  }
+  .project-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   .item{
     border-radius: 12px;
     width:46%;
@@ -57,7 +71,7 @@ button:hover{
     margin-bottom: 50px;
     overflow: hidden;
     img{
-      border-bottom: 2px solid #282c34;
+      border-bottom: 5px solid #282c34;
       width: 100%;
     }
     .info{
@@ -70,12 +84,27 @@ button:hover{
         display: flex;
         justify-content: flex-start;
         flex-direction: row-reverse;
+        button{
+          margin: 25px 10px 0 0;
+        
+          align-self: flex-end;
+        }
+        img{
+          border-bottom: none;
+          width: 40px;
+          height: 40px;
+          margin: 25px 10px 0 0;
+        
+          align-self: flex-end;
+        }
+        img:hover{
+          cursor: pointer;
+        }
+        button:hover{
+          cursor: pointer;
+        }
       }
-      button{
-        margin: 25px 10px 0 0;
-       
-        align-self: flex-end;
-      }
+      
 
     }
 

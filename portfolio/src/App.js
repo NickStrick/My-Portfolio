@@ -6,6 +6,7 @@ import mympyLogo from './images/Mympy.png'
 import luncherLogo from './images/luncherApp.png'
 import sandjLogo from './images/sandj.png'
 import notesLogo from './images/lambdaNotes.png'
+import rangoLogo from './images/rangoDjango.png'
 
 import './App.scss';
 import Home from './components/Home.js';
@@ -36,6 +37,13 @@ const pData = [
     deployed: 'https://luncherappltrii.netlify.com/'
   },
   {
+    name: "Jango Rango Dungeon",
+    description: 'now this was a project that was really fun to do! i worked on it with a team of a few people , go take a look!',
+    img: rangoLogo,
+    link: 'https://github.com/CS-multiplayer',
+    deployed: 'https://jango-rango-dungeon.netlify.com/'
+  },
+  {
     name: "Lambda Notes",
     description: 'now this was a project that was really fun to do! i worked on it with a team of a few people , go take a look!',
     img: notesLogo,
@@ -48,17 +56,12 @@ const pData = [
     img: sandjLogo,
     link: 'https://github.com/NickStrick/User-Interface-Project-Week',
   },
-  {
-    name: "Jango Rango Dungeon",
-    description: 'now this was a project that was really fun to do! i worked on it with a team of a few people , go take a look!',
-    img: logo,
-    link: 'https://github.com/NickStrick/User-Interface-Project-Week',
-  },
+
   {
     name: "CS build week 2",
     description: 'now this was a project that was really fun to do! i worked on it with a team of a few people , go take a look!',
     img: logo,
-    link: 'https://github.com/NickStrick/User-Interface-Project-Week',
+    link: 'https://github.com/TBN-CS-build-week-2/CS-Build-Week-2',
   },
 ]
 
