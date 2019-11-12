@@ -1,4 +1,5 @@
 import React from 'react';
+import gitLogo from '../../images/GitHub-Mark-Light-64px.png'
 
 const Project = (props) => {
     if (!(props.project.name)) {
@@ -14,7 +15,7 @@ const Project = (props) => {
                 <h2 className='title'>{name}</h2>
                 <p aria-label={'project-description'}>{description}</p>
                 <div className='project-links'>
-                    <button target="_blank" onClick={() => window.open(link)}>Github</button>
+                    <img src={gitLogo} target="_blank" onClick={() => window.open(link)} />
                     {props.project.deployed && <button target="_blank" onClick={() => window.open(props.project.deployed)}>Site</button>}</div>
 
             </div>
