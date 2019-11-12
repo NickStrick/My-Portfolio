@@ -65,8 +65,15 @@ button:hover{
       flex-direction: column;
       justify-content: flex-start;
       padding: 0 30px 30px;
-      margin-bottom: 50px;
+      margin-bottom: 25px;
+      .project-links{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+      }
       button{
+        margin: 25px 10px 0 0;
+       
         align-self: flex-end;
       }
 
