@@ -48,6 +48,18 @@ const pData = [
     img: sandjLogo,
     link: 'https://github.com/NickStrick/User-Interface-Project-Week',
   },
+  {
+    name: "Jango Rango Dungeon",
+    description: 'now this was a project that was really fun to do! i worked on it with a team of a few people , go take a look!',
+    img: logo,
+    link: 'https://github.com/NickStrick/User-Interface-Project-Week',
+  },
+  {
+    name: "CS build week 2",
+    description: 'now this was a project that was really fun to do! i worked on it with a team of a few people , go take a look!',
+    img: logo,
+    link: 'https://github.com/NickStrick/User-Interface-Project-Week',
+  },
 ]
 
 function App() {
