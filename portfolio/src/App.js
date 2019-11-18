@@ -71,28 +71,27 @@ const pData = [
     role: 'Wed Developer'
   },
   {
-    name: "Lambda Notes",
+    name: "Stash.It",
     description: 'This project allowed me to showcase my progress when i frist learned react. With this app you can view your list of notes as well as create, edit and delete any particular note.',
-    img: notesLogo,
-    link: 'https://github.com/NickStrick/front-end-project-week',
-    deployed: 'https://nstrick-lambda-notes.netlify.com/',
-    role: 'Wed Developer'
+    img: logo,
+    link: 'https://github.com/tabless-thursday-4-15-2019',
+    role: 'Team Lead'
   },
   {
-    name: "Smith and Jones Architects",
-    description: 'My first project after starting lambda school showcases what i could build after 1 month of programming in javascript, html, and css.',
-    img: sandjLogo,
-    link: 'https://github.com/NickStrick/User-Interface-Project-Week',
-    role: 'Wed Developer',
-  },
-
-  {
-    name: "CS build week 2",
+    name: "Design Your Life",
     description: 'In this project i tested my algorithm skills and traversed a 500 room dungeon, followed clues and mined a blockchain coin. I used my knowledge of search algorithms and graphs in order to mine a coin in the right location in the graph.',
     img: logo,
-    link: 'https://github.com/TBN-CS-build-week-2/CS-Build-Week-2',
-    role: 'Wed Developer'
+    link: 'https://github.com/designyourlife-bw-3-11',
+    role: 'Team Lead'
   },
+  {
+    name: "devdesk-queue",
+    description: 'My first project after starting lambda school showcases what i could build after 1 month of programming in javascript, html, and css.',
+    img: logo,
+    link: 'https://github.com/devdesk-queue',
+    role: 'Team Lead',
+  },
+
 ]
 
 function App() {
