@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import logo from './logo.svg';
 import riyLogo from './images/RIY.png'
@@ -96,6 +96,20 @@ const pData = [
 
 function App() {
   const [projects] = useState(pData)
+
+  useEffect(() => {
+    // console.log(window.scrollY)
+    console.log('h')
+    // if (window.scrollY === 0) {
+    //     if (pinText != 'OpacityOn') {
+    //         setPinText('OpacityOn');
+    //     }
+    // } else {
+    //     if (pinText != 'OpacityOff') {
+    //         setPinText('OpacityOff');
+    //     }
+    // }
+  }, [window.scrollY]);
 
   return (
     <div className="App">
