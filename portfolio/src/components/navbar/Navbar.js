@@ -6,19 +6,32 @@ import './Navbar.scss'
 const Navbar = (props) => {
     const [navController, setController] = useState(new ScrollMagic.Controller());
     const [pinText, setPinText] = useState('OpacityOff');
+    const [scrollNum, setScroll] = useState(window.scrollY);
+
+    function updateScroll() {
+        if (window.scrolly !== scrollNum) {
+            setScroll(window.scrollY)
+        }
+
+    }
+    window.addEventListener('scroll', () => updateScroll());
+
+    function newscroll() {
+        console.log('wow')
+    }
+    window.addEventListener('scroll', () => newscroll());
 
     useEffect(() => {
         console.log(window.scrollY)
-        console.log('h')
-        // if (window.scrollY === 0) {
-        //     if (pinText != 'OpacityOn') {
-        //         setPinText('OpacityOn');
-        //     }
-        // } else {
-        //     if (pinText != 'OpacityOff') {
-        //         setPinText('OpacityOff');
-        //     }
-        // }
+        if (window.scrollY === 0) {
+            if (pinText != 'OpacityOn') {
+                setPinText('OpacityOn');
+            }
+        } else {
+            if (pinText != 'OpacityOff') {
+                setPinText('OpacityOff');
+            }
+        }
     });
 
     return (
