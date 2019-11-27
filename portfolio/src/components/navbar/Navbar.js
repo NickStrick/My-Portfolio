@@ -1,10 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import ScrollMagic from 'scrollmagic';
 import logo from '../../logo.svg';
 import './Navbar.scss'
 
 const Navbar = (props) => {
+    const [navController, setController] = useState(new ScrollMagic.Controller());
+    const [pinText, setPinText] = useState('OpacityOff');
+
+    useEffect(() => {
+        console.log(window.scrollY)
+        console.log('h')
+        // if (window.scrollY === 0) {
+        //     if (pinText != 'OpacityOn') {
+        //         setPinText('OpacityOn');
+        //     }
+        // } else {
+        //     if (pinText != 'OpacityOff') {
+        //         setPinText('OpacityOff');
+        //     }
+        // }
+    });
+
     return (
-        <div className='nav-back'>
+        <div className={`nav-back ${pinText}`}>
             <div className="nav-bar">
                 <div className='logo'>
                     <img src={logo} />
