@@ -16,11 +16,6 @@ const Navbar = (props) => {
     }
     window.addEventListener('scroll', () => updateScroll());
 
-    function newscroll() {
-        console.log('wow')
-    }
-    window.addEventListener('scroll', () => newscroll());
-
     useEffect(() => {
         console.log(window.scrollY)
         if (window.scrollY === 0) {
