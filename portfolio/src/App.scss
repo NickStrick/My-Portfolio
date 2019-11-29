@@ -1,4 +1,5 @@
 
+$background-base: #282c34;
 
 *{
   box-sizing: border-box;
@@ -15,7 +16,7 @@
 
 
 .App-header {
-  background-color: #282c34;
+  background-color: $background-base;
   min-height: 600px;
   margin-left: 2%;
   display: flex;
@@ -26,10 +27,10 @@
   color: white;
 }
 .container{
-  background-color: #282c34;
+  background-color: $background-base;
   margin: 0 auto;
   max-width: 1300px;
-  box-shadow: 1px 40px 30px #282c34;
+  box-shadow: 1px 40px 30px $background-base;
 }
 button{
   background: white;
@@ -39,7 +40,7 @@ button{
   
 }
 button:hover{
-    background: #282c34;
+    background: $background-base;
     color: white;
 
   }
@@ -51,7 +52,7 @@ button:hover{
   flex-wrap: wrap;
   justify-content: space-between;
   color: white;
-  box-shadow: 1px 40px 30px #282c34;
+  box-shadow: 1px 40px 30px $background-base;
   .port-head{
     width: 100%;
     border-bottom: 1px solid gray;
@@ -78,7 +79,7 @@ button:hover{
 
 
     img{
-      border-bottom: 5px solid #282c34;
+      border-bottom: 5px solid $background-base;
       width: 100%;
     }
     .info{
