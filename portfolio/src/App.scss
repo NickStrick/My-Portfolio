@@ -1,5 +1,6 @@
 
 $background-base: #282c34;
+$background-light: #4b566e;
 
 *{
   box-sizing: border-box;
@@ -61,7 +62,7 @@ button:hover{
     padding: 10px;
     font-size: 1.9rem;
     text-align: center;
-    background: #4b566e;
+    background: $background-light;
   }
   .project-list{
     display: flex;
