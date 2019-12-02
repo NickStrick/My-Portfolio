@@ -32,20 +32,23 @@ const Navbar = (props) => {
     });
 
     return (
-        <div className={`nav-back ${pinText}`}>
-            <div className={`nav-bar ${navClass}`}>
-                <div className='logo'>
-                    <img src={logo} />
-                    <h3>Nick</h3>
-                </div>
+        <>
+            <div className={`nav-background ${pinText}`}><h3>Nick</h3></div>
+            <div className={`nav-back ${pinText}`}>
+                <div className={`nav-bar ${navClass}`}>
+                    <div className='logo' onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>
+                        <img src={logo} />
+                        <h3>Nick</h3>
+                    </div>
 
-                <div className='nav-list'>
-                    <a className='nav-item' href='#portfolio'>Portfolio</a>
-                    <a className='nav-item' href='#contact-info'>Contact</a>
-                </div>
+                    <div className='nav-list'>
+                        <a className='nav-item' href='#portfolio'>Portfolio</a>
+                        <a className='nav-item' href='#contact-info'>Contact</a>
+                    </div>
 
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 
