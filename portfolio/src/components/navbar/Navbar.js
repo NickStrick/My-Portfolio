@@ -4,8 +4,8 @@ import logo from '../../logo.svg';
 import './Navbar.scss'
 
 const Navbar = (props) => {
-    const [navController, setController] = useState(new ScrollMagic.Controller());
-    const [pinText, setPinText] = useState('OpacityOff');
+    const [pinText, setPinText] = useState('OpacityOn');
+    const [navClass, setNavClass] = useState('top');
     const [scrollNum, setScroll] = useState(window.scrollY);
 
     function updateScroll() {
@@ -21,17 +21,19 @@ const Navbar = (props) => {
         if (window.scrollY === 0) {
             if (pinText != 'OpacityOn') {
                 setPinText('OpacityOn');
+                setNavClass('top')
             }
         } else {
             if (pinText != 'OpacityOff') {
                 setPinText('OpacityOff');
+                setNavClass('below')
             }
         }
     });
 
     return (
         <div className={`nav-back ${pinText}`}>
-            <div className="nav-bar">
+            <div className={`nav-bar ${navClass}`}>
                 <div className='logo'>
                     <img src={logo} />
                     <h3>Nick</h3>
