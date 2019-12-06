@@ -70,46 +70,38 @@ const pData = [
     link: 'https://github.com/TBN-CS-build-week-2/CS-Build-Week-2',
     role: 'Wed Developer'
   },
-  {
-    name: "Stash.It",
-    description: 'This project allowed me to showcase my progress when i frist learned react. With this app you can view your list of notes as well as create, edit and delete any particular note.',
-    img: logo,
-    link: 'https://github.com/tabless-thursday-4-15-2019',
-    role: 'Team Lead'
-  },
-  {
-    name: "Design Your Life",
-    description: 'In this project i tested my algorithm skills and traversed a 500 room dungeon, followed clues and mined a blockchain coin. I used my knowledge of search algorithms and graphs in order to mine a coin in the right location in the graph.',
-    img: logo,
-    link: 'https://github.com/designyourlife-bw-3-11',
-    role: 'Team Lead'
-  },
-  {
-    name: "devdesk-queue",
-    description: 'My first project after starting lambda school showcases what i could build after 1 month of programming in javascript, html, and css.',
-    img: logo,
-    link: 'https://github.com/devdesk-queue',
-    role: 'Team Lead',
-  },
+  // {
+  //   name: "Stash.It",
+  //   description: 'This project allowed me to showcase my progress when i frist learned react. With this app you can view your list of notes as well as create, edit and delete any particular note.',
+  //   img: logo,
+  //   link: 'https://github.com/tabless-thursday-4-15-2019',
+  //   role: 'Team Lead'
+  // },
+  // {
+  //   name: "Design Your Life",
+  //   description: 'In this project i tested my algorithm skills and traversed a 500 room dungeon, followed clues and mined a blockchain coin. I used my knowledge of search algorithms and graphs in order to mine a coin in the right location in the graph.',
+  //   img: logo,
+  //   link: 'https://github.com/designyourlife-bw-3-11',
+  //   role: 'Team Lead'
+  // },
+  // {
+  //   name: "devdesk-queue",
+  //   description: 'My first project after starting lambda school showcases what i could build after 1 month of programming in javascript, html, and css.',
+  //   img: logo,
+  //   link: 'https://github.com/devdesk-queue',
+  //   role: 'Team Lead',
+  // },
 
 ]
 
 function App() {
   const [projects] = useState(pData)
 
-  useEffect(() => {
-    // console.log(window.scrollY)
-    console.log('h')
-    // if (window.scrollY === 0) {
-    //     if (pinText != 'OpacityOn') {
-    //         setPinText('OpacityOn');
-    //     }
-    // } else {
-    //     if (pinText != 'OpacityOff') {
-    //         setPinText('OpacityOff');
-    //     }
-    // }
-  }, [window.scrollY]);
+  // useEffect(() => {
+
+  //   console.log('h')
+
+  // }, [window.scrollY]);
 
   return (
     <div className="App">
