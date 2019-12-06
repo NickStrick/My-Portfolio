@@ -7,10 +7,10 @@ $background-light: #4b566e;
 }
 .App {
   background-image: url('./images/image2vector.svg');
-  background-color: #cccccc;
+  background-color: $background-base;
   background-repeat: no-repeat, repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 380vh;
 
 }
 
@@ -64,60 +64,81 @@ button:hover{
     text-align: center;
     background: $background-light;
   }
-  .project-list{
+  .projects-columns{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .item{
-    border-radius: 12px;
-    width:46%;
-    background: #363e3f;
-    margin-bottom: 50px;
-    overflow: hidden;
-    box-shadow: 5px 20px 20px #1C3351;
-    border-bottom: 8px solid #76E7B3;
-
-
-    img{
-      border-bottom: 5px solid $background-base;
-      width: 100%;
-    }
-    .info{
+    flex-direction: row;
+    .project-list{
       display: flex;
+      flex-wrap: wrap;
+      align-items: center;
       flex-direction: column;
-      justify-content: flex-start;
-      padding: 0 30px 30px;
-      margin-bottom: 25px;
-      .project-links{
+      // height: 3000px;
+      width: 50%;
+    }
+    .item{
+      border-radius: 12px;
+      width:88%;
+      background: #363e3f;
+      margin-bottom: 50px;
+      overflow: hidden;
+      box-shadow: 10px 25px 18px #131B29;
+      border-bottom: 8px solid #76E7B3;
+  
+      .title{
+        text-align: center;
+        font-size: 1.8rem;
+      }
+      img{
+        border-bottom: 5px solid $background-base;
+        width: 100%;
+        height: 26rem;
+      }
+      .info{
+        max-height: 0;
+
+        transition: max-height 0.15s ease-out, margin .2s ease, padding .2s ease;
         display: flex;
+        flex-direction: column;
         justify-content: flex-start;
-        flex-direction: row-reverse;
-        button{
-          margin: 25px 10px 0 0;
-        
-          align-self: flex-end;
-        }
-        img{
-          border-bottom: none;
-          width: 40px;
-          height: 40px;
-          margin: 25px 10px 0 0;
-        
-          align-self: flex-end;
-        }
-        img:hover{
-          cursor: pointer;
-        }
-        button:hover{
-          cursor: pointer;
+
+        .project-links{
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: row-reverse;
+          button{
+            margin: 25px 10px 0 0;
+          
+            align-self: flex-end;
+          }
+          img{
+            border-bottom: none;
+            width: 40px;
+            height: 40px;
+            margin: 25px 10px 0 0;
+          
+            align-self: flex-end;
+          }
+          img:hover{
+            cursor: pointer;
+          }
+          button:hover{
+            cursor: pointer;
+          }
         }
       }
       
-
+  
     }
-
-  }
+    .item:hover{
+      .info{
+        max-height: 500px;
+        transition:  max-height .3s ease-in,margin .2s ease, padding .2s ease;
+        padding: 0 30px 30px;
+        margin-bottom: 25px;
+        
+      } // info
+    } //item:hover
+  } // projects-columns
 }
 
 
