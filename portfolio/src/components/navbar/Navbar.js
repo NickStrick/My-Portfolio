@@ -17,8 +17,8 @@ const Navbar = (props) => {
     window.addEventListener('scroll', () => updateScroll());
 
     useEffect(() => {
-        console.log(window.scrollY)
-        if (window.scrollY === 0) {
+        // console.log(window.scrollY)
+        if (window.scrollY < 100) {
             if (pinText != 'OpacityOn') {
                 setPinText('OpacityOn');
                 setNavClass('top')
