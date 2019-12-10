@@ -10,9 +10,10 @@ const Project = (props) => {
     return (
 
         <div className="item">
+            <h2 className='title'>{name}</h2>
             <img src={img} />
             <div className="info">
-                <h2 className='title'>{name}</h2>
+
                 <p aria-label={'project-description'}>{description}</p>
                 <div className='project-links'>
                     <img src={gitLogo} target="_blank" onClick={() => window.open(link)} />
