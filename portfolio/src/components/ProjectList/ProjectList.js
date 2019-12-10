@@ -1,5 +1,5 @@
 import React from 'react';
-import Project from './Project.js.js';
+import Project from './Project.js';
 
 const ProjectList = (props) => {
     let middle = props.projects.length % 2 !== 0 ? ((props.projects.length + 1) / 2) : props.projects.length / 2;
