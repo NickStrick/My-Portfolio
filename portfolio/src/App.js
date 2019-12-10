@@ -15,13 +15,27 @@ import HomePage from './components/HomePage.js';
 import ProjectInfo from './components/ProjectList/ProjectInfo.js';
 
 const pData = [
+  // name
+  // description
+  // logo image
+  // github link
+  // deployed link
+  // role in project
+
+  // technologies used
+  // time project was completed -- # of weeks
+  // summary of contribution to project -- what you worked on front end/backend -- what you contributed
   {
     name: "Review It Yourself",
     description: 'Review It Yourself will target people who want to get up and get productive and learn different skills to do projects themselves. There will be a rating system on which one is better. This will lead to the tutorials that are accurate and precise to be on top.',
     img: riyLogo,
     link: 'https://github.com/labs13-how-to',
     deployed: 'https://how-tutor.netlify.com/',
-    role: 'Wed Developer'
+    role: 'Wed Developer',
+    techUsed: ['ReactJs', 'Express', 'Postgres', 'Cloudinary', 'PassportJS'],
+    teamMemebers: 6,
+    weeksCompleted: 5,
+    contribution: 'I primary worked with the frontend on this project. i used auth0 and passportJS to create the authentication for our users database. I set up the projects routes on the database and used knex to template and seed our database.'
   },
   {
     name: "Jango Rango Dungeon",
@@ -29,7 +43,12 @@ const pData = [
     img: rangoLogo,
     link: 'https://github.com/CS-multiplayer',
     deployed: 'https://jango-rango-dungeon.netlify.com/',
-    role: 'Wed Developer'
+    role: 'Wed Developer',
+    techUsed: ['ReactJs', 'Express', 'Postgres', 'Cloudinary', 'PassportJS'],
+    teamMemebers: 6,
+    weeksCompleted: 5,
+    contribution: 'I primary worked with the frontend on this project. i used auth0 and passportJS to create the authentication for our users database. I set up the projects routes on the database and used knex to template and seed our database.'
+
   },
   {
     name: "Smith and Jones Architects",
@@ -37,6 +56,11 @@ const pData = [
     img: sandjLogo,
     link: 'https://github.com/NickStrick/User-Interface-Project-Week',
     role: 'Wed Developer',
+    techUsed: ['ReactJs', 'Express', 'Postgres', 'Cloudinary', 'PassportJS'],
+    teamMemebers: 6,
+    weeksCompleted: 5,
+    contribution: 'I primary worked with the frontend on this project. i used auth0 and passportJS to create the authentication for our users database. I set up the projects routes on the database and used knex to template and seed our database.'
+
   },
   {
     name: "Lambda Notes",
@@ -44,7 +68,12 @@ const pData = [
     img: notesLogo,
     link: 'https://github.com/NickStrick/front-end-project-week',
     deployed: 'https://nstrick-lambda-notes.netlify.com/',
-    role: 'Wed Developer'
+    role: 'Wed Developer',
+    techUsed: ['ReactJs', 'Express', 'Postgres', 'Cloudinary', 'PassportJS'],
+    teamMemebers: 6,
+    weeksCompleted: 5,
+    contribution: 'I primary worked with the frontend on this project. i used auth0 and passportJS to create the authentication for our users database. I set up the projects routes on the database and used knex to template and seed our database.'
+
   },
   {
     name: "Mympy Dreams",
@@ -52,7 +81,12 @@ const pData = [
     img: mympyLogo,
     link: 'https://github.com/mympy-dreamers',
     deployed: 'https://mympydreamers.netlify.com/',
-    role: 'Team Lead/Web Developer'
+    role: 'Team Lead/Web Developer',
+    techUsed: ['ReactJs', 'Express', 'Postgres', 'Cloudinary', 'PassportJS'],
+    teamMemebers: 6,
+    weeksCompleted: 5,
+    contribution: 'I primary worked with the frontend on this project. i used auth0 and passportJS to create the authentication for our users database. I set up the projects routes on the database and used knex to template and seed our database.'
+
   },
   {
     name: "Luncher App",
@@ -60,14 +94,24 @@ const pData = [
     img: luncherLogo,
     link: 'https://github.com/luncher-team/LA-Backend-Nick-Stricker',
     deployed: 'https://luncherappltrii.netlify.com/',
-    role: 'Wed Developer'
+    role: 'Wed Developer',
+    techUsed: ['ReactJs', 'Express', 'Postgres', 'Cloudinary', 'PassportJS'],
+    teamMemebers: 6,
+    weeksCompleted: 5,
+    contribution: 'I primary worked with the frontend on this project. i used auth0 and passportJS to create the authentication for our users database. I set up the projects routes on the database and used knex to template and seed our database.'
+
   },
   {
     name: "CS build week 2",
     description: 'In this project i tested my algorithm skills and traversed a 500 room dungeon, followed clues and mined a blockchain coin. I used my knowledge of search algorithms and graphs in order to mine a coin in the right location in the graph.',
     img: logo,
     link: 'https://github.com/TBN-CS-build-week-2/CS-Build-Week-2',
-    role: 'Wed Developer'
+    role: 'Wed Developer',
+    techUsed: ['ReactJs', 'Express', 'Postgres', 'Cloudinary', 'PassportJS'],
+    teamMemebers: 6,
+    weeksCompleted: 5,
+    contribution: 'I primary worked with the frontend on this project. i used auth0 and passportJS to create the authentication for our users database. I set up the projects routes on the database and used knex to template and seed our database.'
+
   },
   // {
   //   name: "Stash.It",
