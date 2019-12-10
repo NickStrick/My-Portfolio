@@ -10,11 +10,9 @@ import notesLogo from './images/lambdaNotes.png'
 import rangoLogo from './images/rangoDjango.png'
 
 import './App.scss';
-import Home from './components/Home.js';
-import ProjectList from './components/ProjectList/ProjectList.js';
 import Navbar from './components/navbar/Navbar.js';
-import Contactinfo from './components/ContactInfo/Contactinfo.js';
 import HomePage from './components/HomePage.js';
+import ProjectInfo from './components/ProjectList/ProjectInfo.js';
 
 const pData = [
   {
@@ -103,8 +101,8 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="container">
-
-        <HomePage projects={projects} />
+        <Route exact path='/' render={props => <HomePage {...props} projects={projects} />} />
+        <Route path='/project/:id' render={props => <ProjectInfo {...props} projects={projects} />} />
 
       </div>
     </div>
