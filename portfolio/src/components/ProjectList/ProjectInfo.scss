@@ -5,18 +5,40 @@
     flex-direction: column;
     color: white;
     .projectPic{
+        margin-bottom: 35px;
         align-self: center;
         width: 80%;
         border-radius: 15px;
     }
     .contribution{
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
     .tech{
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 45px;
+        h2{
+            padding-left: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        ul{
+            margin-top: 10px;
+            border-top: 1px solid white;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 50%;
+            padding-left: 80px;
+            li{
+                padding: 20px 60px 0 0;
+            }
+        }
     }
 
     .short-info{
+        align-self: center;
         display: flex;
         justify-content: space-between;
         width: 500px;
@@ -40,7 +62,7 @@
           margin: 25px 10px 0 0;
         //   width: 80px;  
           align-self: flex-start;
-          padding: 14px 30px;
+          padding: 14px 40px;
         }
         img{
           border-bottom: none;
