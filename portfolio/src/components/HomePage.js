@@ -10,7 +10,7 @@ const HomePage = (props) => {
 
         <React.Fragment>
             <Home />
-            <ProjectList projects={props.projects} />
+            <ProjectList projects={props.projects} history={props.history} />
             <Contactinfo />
         </React.Fragment>
     );
