@@ -1,8 +1,9 @@
 import React from 'react';
 import gitLogo from '../../images/GitHub-Mark-Light-64px.png'
+import './ProjectInfo.scss';
 
 const Project = (props) => {
-    const project = props.projects[0]
+    const project = props.projects[props.match.params.id]
     if (!(project.name)) {
         project.name = 'ERROR'
     }
@@ -11,16 +12,31 @@ const Project = (props) => {
     return (
 
         <div className="ProjectInfo">
-            <img src={img} alt={`${name} pic`} />
+            <img className='projectPic' src={img} alt={`${name} pic`} />
             <h1 className='title'>{name}</h1>
             <p aria-label={'project-description'}>{description}</p>
             <p className='contribution'>{contribution}</p>
-            <ul>
-                {techUsed.map((tech, index) => <li key={index}>{tech}</li>)}
-            </ul>
-            <div>
-                <p>weeks worked on project: {weeksCompleted}</p>
-                <p>Team Size: {teamMemebers}</p>
+            <div className='tech'>
+                <h2>Technologies</h2>
+                <ul>
+                    {techUsed.map((tech, index) => <li key={index}>{tech}</li>)}
+                </ul>
+            </div>
+            <div className='short-info'>
+                <div className='info-item'>
+                    <label>Time completed</label>
+                    <p>{weeksCompleted} Weeks</p>
+                </div>
+                <div className='info-item'>
+                    <label>Team Size</label>
+                    <p>{teamMemebers}</p>
+                </div>
+                <div className='info-item'>
+                    <label>Role</label>
+                    <p>{role}</p>
+                </div>
+
+
 
             </div>
             <div className='project-links'>
