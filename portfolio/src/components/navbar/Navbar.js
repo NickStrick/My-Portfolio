@@ -30,12 +30,20 @@ const Navbar = (props) => {
         }
     });
 
+    function logoClick() {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+        if (props.location.pathname !== '/') {
+            props.history.push('/');
+        }
+
+    }
+
     return (
         <>
             <div className={`nav-background ${pinText}`}><h3>Nick</h3></div>
             <div className={`nav-back ${pinText}`}>
                 <div className={`nav-bar ${navClass}`}>
-                    <div className='logo' onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>
+                    <div className='logo' onClick={logoClick}>
                         <img src={logo} />
                         <h3>Nick</h3>
                     </div>
