@@ -143,7 +143,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <Route path='/' render={props => <Navbar {...props} />} />
       <div className="container">
         <Route exact path='/' render={props => <HomePage {...props} projects={projects} />} />
         <Route path='/project/:id' render={props => <ProjectInfo {...props} projects={projects} />} />
