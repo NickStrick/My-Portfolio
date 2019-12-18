@@ -1,0 +1,25 @@
+$background-base: #282c34;
+$background-light: #4b566e;
+
+.App-header {
+    background-color: $background-base;
+    min-height: 600px;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 2rem;
+    color: white;
+    padding-top: 150px;
+  }
+
+.App-header{
+    .sumBtn{
+        width : 130px;
+    }
+    .summary{
+        font-size: 1rem;
+        padding: 10px 40px 40px 15px;
+    }
+}
