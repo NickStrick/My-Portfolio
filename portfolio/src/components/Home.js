@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import './Home.scss'
-import gitLogo from '../images/GitHub-Mark-Light-64px.png'
-import linkedin from '../images/linkedin-2.svg'
-import mail from '../images/mail-100.png'
+import './Home.scss';
+import gitLogo from '../images/GitHub-Mark-Light-64px.png';
+import linkedin from '../images/linkedin-2.svg';
+import mail from '../images/mail-100.png';
+import Pfp from '../images/pfp.jpg';
 
 const Home = () => {
     const [sumBtn, setBtn] = useState(`sumBtn sumBtnClose`)
@@ -25,7 +26,9 @@ const Home = () => {
     const summary3 = 'These exerpiences only feed my hunger for learning and solving puzzles, and they fuel me to be where i am today.';
     return (
         <header className="App-header" aria-label={'page-header'}>
+            <img id='pfp' src={Pfp} alt='Nick S profile picture' />
             <div className='header-title'>
+
                 <h1>Nick Stricker</h1>
                 <div className='social-icons'>
                     <img src={gitLogo} className='gitLogo git' target="_blank" onClick={() => window.open('https://github.com/NickStrick')} />
@@ -34,7 +37,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <p>Electricity in the spirit, puzzles on the mind, code in my veins.</p>
+            <p id='moto'>Electricity in the spirit, puzzles on the mind, code in my veins.</p>
             <button className={sumBtn} onClick={toggleSum}>{sumOpen ? '⮙' : '⮛'}&nbsp; &nbsp; {sumBtn == 'sumBtn sumBtnClose' && 'read more'}</button>
 
             <div className={`summary ${sumOpen ? 'open' : ''}`} >
@@ -44,7 +47,7 @@ const Home = () => {
             </div>
 
 
-        </header>
+        </header >
     );
 }
 
