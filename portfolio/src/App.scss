@@ -10,7 +10,7 @@ $highlight: #76E7B3;
   background-image: url('./images/image2vector.svg');
   background-color: $background-base;
   background-repeat: repeat;
-  background-size: 102vh;
+  background-size: 100vw;
   background-attachment: fixed;
   padding-bottom: 70px;
 
@@ -22,6 +22,10 @@ $highlight: #76E7B3;
   max-width: 1300px;
   box-shadow: 1px 40px 30px $background-base;
   padding-bottom: 20px;
+}
+.home-container{
+
+
 }
 button{
   background: white;

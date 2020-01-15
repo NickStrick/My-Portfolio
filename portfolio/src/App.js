@@ -136,9 +136,9 @@ function App() {
   return (
     <div className="App">
       <Route path='/' render={props => <Navbar {...props} />} />
-      <div className="container">
-        <Route exact path='/' render={props => <HomePage {...props} projects={projects} />} />
 
+      <Route exact path='/' render={props => <HomePage {...props} projects={projects} />} />
+      <div className="container">
         <Route path='/project/:id' render={props => <ProjectInfo {...props} projects={projects} />} />
 
       </div>
