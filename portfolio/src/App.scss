@@ -1,6 +1,7 @@
 
 $background-base: #282c34;
 $background-light: #4b566e;
+$highlight: #76E7B3;
 
 *{
   box-sizing: border-box;
@@ -8,9 +9,10 @@ $background-light: #4b566e;
 .App {
   background-image: url('./images/image2vector.svg');
   background-color: $background-base;
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
-  min-height: 380vh;
+  background-repeat: repeat;
+  background-size: 2500px;
+  // min-height: 2000px;
+  padding-bottom: 70px;
 
 }
 
@@ -19,6 +21,7 @@ $background-light: #4b566e;
   margin: 0 auto;
   max-width: 1300px;
   box-shadow: 1px 40px 30px $background-base;
+  padding-bottom: 20px;
 }
 button{
   background: white;
@@ -69,7 +72,7 @@ button:hover{
       margin-bottom: 50px;
       overflow: hidden;
       box-shadow: 10px 25px 18px #131B29;
-      border-bottom: 8px solid #76E7B3;
+      border-bottom: 8px solid $highlight;
   
       .title{
         text-align: center;
@@ -84,6 +87,7 @@ button:hover{
         max-height: 0;
 
         transition: max-height 0.15s ease-out, margin .2s ease, padding .2s ease;
+        transform: none;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
