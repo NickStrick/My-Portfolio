@@ -5,7 +5,9 @@ const SkillItem = (props) => {
 
     return (
         <div className="item">
-            <img src={logo} alt={skill} />
+            <div className='skill-image'>
+                <img src={logo} alt={skill} id={props.id} />
+            </div>
             <p>{skill}</p>
 
         </div >
