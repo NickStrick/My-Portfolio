@@ -16,10 +16,28 @@ $highlight: #76E7B3;
   }
 
 .App-header{
-    h1{
-        margin-bottom: 0;
-        padding-bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-bottom: 50px;
+    #pfp{
+        width: 300px;
+        border-radius: 140px;
+        align-self: center;
+        justify-self: center;
     }
+    .header-title{
+        margin-bottom: 50px;
+        h1{
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }   
+    }
+    #moto{
+        margin-bottom: 0;
+    }
+    
     //social icons
     .social-icons{
         display: flex;
