@@ -7,7 +7,7 @@ const ProjectList = (props) => {
         <>
 
 
-            <div className="projects" id='portfolio'>
+            <div className="projects" >
                 <h1 className='port-head'>Portfolio</h1>
                 <div className='projects-columns'>
                     <div className='project-list'>

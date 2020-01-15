@@ -1,6 +1,7 @@
 
 $background-base: #282c34;
 $background-light: #4b566e;
+$highlight: #76E7B3;
 
 *{
   box-sizing: border-box;
@@ -8,30 +9,19 @@ $background-light: #4b566e;
 .App {
   background-image: url('./images/image2vector.svg');
   background-color: $background-base;
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
-  min-height: 380vh;
+  background-repeat: repeat;
+  background-size: 102vh;
+  background-attachment: fixed;
+  padding-bottom: 70px;
 
 }
 
-
-
-.App-header {
-  background-color: $background-base;
-  min-height: 600px;
-  margin-left: 2%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  font-size: 2rem;
-  color: white;
-}
 .container{
   background-color: $background-base;
   margin: 0 auto;
   max-width: 1300px;
   box-shadow: 1px 40px 30px $background-base;
+  padding-bottom: 20px;
 }
 button{
   background: white;
@@ -54,8 +44,10 @@ button:hover{
   justify-content: space-between;
   color: white;
   box-shadow: 1px 40px 30px $background-base;
+  margin-bottom: 80px;
   .port-head{
     width: 100%;
+    
     border-bottom: 1px solid gray;
     border-top: 1px solid gray;
     margin:  15px 0;
@@ -63,6 +55,8 @@ button:hover{
     font-size: 1.9rem;
     text-align: center;
     background: $background-light;
+    margin-top: 55px;
+    margin-bottom: 55px;
   }
   .projects-columns{
     display: flex;
@@ -82,7 +76,7 @@ button:hover{
       margin-bottom: 50px;
       overflow: hidden;
       box-shadow: 10px 25px 18px #131B29;
-      border-bottom: 8px solid #76E7B3;
+      border-bottom: 8px solid $highlight;
   
       .title{
         text-align: center;
@@ -97,6 +91,7 @@ button:hover{
         max-height: 0;
 
         transition: max-height 0.15s ease-out, margin .2s ease, padding .2s ease;
+        transform: none;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
