@@ -12,7 +12,7 @@ $highlight: #76E7B3;
             width: 100%;
             border-bottom: 1px solid gray;
             border-top: 1px solid gray;
-            margin:  25px 0 40px;
+            margin:  25px 0 60px;
             padding: 10px;
             font-size: 1.9rem;
             text-align: center;
@@ -29,9 +29,9 @@ $highlight: #76E7B3;
             width: 85px;
             height: 105px;
             text-align: center;
-            margin: 0 20px 20px;
+            margin: 0 20px 60px;
             border-radius: 10px;
-            box-shadow: 2px 3px 6px #888888;
+            box-shadow: 1px 3px 6px #888888;
             border: 1px solid #888888;
             overflow: hidden;
             p{
@@ -59,9 +59,7 @@ $highlight: #76E7B3;
             }
             
         }
-        .item:hover{
-            box-shadow: 2px 4px 8px #888888;
-        }
+        
         
 
     }
