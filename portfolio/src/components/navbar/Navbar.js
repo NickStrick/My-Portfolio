@@ -50,6 +50,7 @@ const Navbar = (props) => {
 
                     <div className='nav-list'>
                         <a className='nav-item' href='#portfolio'>Portfolio</a>
+                        <a className='nav-item' href='#skills'>Skills</a>
                         <a className='nav-item' href='#contact-info'>Contact</a>
                     </div>
 
