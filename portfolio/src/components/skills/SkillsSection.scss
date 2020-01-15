@@ -3,7 +3,7 @@ $background-light: #4b566e;
 $highlight: #76E7B3;
 
 .skills{
-    margin: 40px 2%;
+    margin: 40px 2% 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -12,7 +12,7 @@ $highlight: #76E7B3;
             width: 100%;
             border-bottom: 1px solid gray;
             border-top: 1px solid gray;
-            margin:  15px 0;
+            margin:  25px 0 40px;
             padding: 10px;
             font-size: 1.9rem;
             text-align: center;
@@ -27,7 +27,7 @@ $highlight: #76E7B3;
         .item{
             background-color: $background-base;
             width: 85px;
-            height: 100px;
+            height: 105px;
             text-align: center;
             margin: 0 20px 20px;
             border-radius: 10px;
@@ -39,9 +39,25 @@ $highlight: #76E7B3;
                 padding: 8px 0 8px;
                 background:$background-light;
             }
-            img{
-                width:100%;
+            .skill-image{
+                height: 60%;
+                overflow: hidden;
+                margin-top:8px;
+                // margin-bottom: 5px;
+                img{
+                    height:85%;
+
+                }
+                #ReactJSLogo{
+                    height: 90%;
+
+                }
+                #SQLLogo{
+                    height: 90%;
+
+                }
             }
+            
         }
         .item:hover{
             box-shadow: 2px 4px 8px #888888;
