@@ -1,5 +1,6 @@
 $background-base: #282c34;
 $background-light: #4b566e;
+$highlight: #76E7B3;
 
 .App-header {
     background-color: $background-base;
@@ -15,11 +16,64 @@ $background-light: #4b566e;
   }
 
 .App-header{
+    h1{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    //social icons
+    .social-icons{
+        display: flex;
+
+    }
+    .gitLogo{
+        opacity: .6;
+        color: white;
+        margin-right: 10px;
+    }
+    .gitLogo:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+    .git{
+        height: 30px;
+    }
+    .mail{
+        width: 26px;
+    }
+    .linkedin{
+        width: 30px;
+    }
+
+    // summary
     .sumBtn{
-        width : 130px;
+        width : 100%;
+        text-align: left;
+        font-size: 3rem;
+        border: none;
+        background: none;
+        color: white;
+        transition:  font-size .3s ease-in
+    }
+    .sumBtn:focus {outline:0;}
+    .sumBtn:hover{
+        color: $highlight;
+    }
+
+    .sumBtnClose{
+        font-size: 1.6rem;
+        transition:  font-size .3s ease-in
     }
     .summary{
+        height: 0px;
+        padding: 0px 40px 0px 15px;
+        overflow: hidden;
         font-size: 1rem;
-        padding: 10px 40px 40px 15px;
+
+        transition:  height .3s ease-in,margin .2s ease;
     }
+    .summary.open{
+        height: 300px;
+        transition:  height .3s ease-in,margin .2s ease;
+    }
+
 }
