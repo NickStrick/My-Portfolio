@@ -33,7 +33,7 @@ $highlight: #76E7B3;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0 50px 50px;
+    margin: 0 50px 30px;
     .header-title{
         margin-bottom: 50px;
         h1{
@@ -92,12 +92,12 @@ $highlight: #76E7B3;
         height: 0px;
         padding: 0px 40px 0px 15px;
         overflow: hidden;
-        font-size: 1rem;
+        font-size: 1.1rem;
 
         transition:  height .3s ease-in,margin .2s ease;
     }
     .summary.open{
-        height: 300px;
+        height: 100%;
         transition:  height .3s ease-in,margin .2s ease;
     }
 

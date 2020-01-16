@@ -26,14 +26,13 @@ const Home = () => {
     const summary3 = 'These exerpiences only feed my hunger for learning and solving puzzles, and they fuel me to be where I am today.';
     return (
         <header className="App-header" aria-label={'page-header'}>
-            {/* <img id='pfp' src={Pfp} alt='Nick S profile picture' /> */}
+
             <div className='header-title'>
 
                 <h1>Nick Stricker</h1>
                 <div className='social-icons'>
                     <img src={gitLogo} className='gitLogo git' target="_blank" onClick={() => window.open('https://github.com/NickStrick')} />
                     <img src={linkedin} className='gitLogo linkedin' target="_blank" onClick={() => window.open('https://www.linkedin.com/in/nick-stricker-1ba8a7192/')} />
-                    {/* <img src={mail} className='gitLogo mail' target="_blank" onClick={() => window.open('strickerdev@gmail.com')} /> */}
                 </div>
             </div>
 
