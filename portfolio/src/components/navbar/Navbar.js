@@ -16,7 +16,6 @@ const Navbar = (props) => {
 
     }
     function navMouseover(dir) {
-        console.log('enter', pinText)
         if (dir === 'in') {
             setMouseIn(true)
         } else {
