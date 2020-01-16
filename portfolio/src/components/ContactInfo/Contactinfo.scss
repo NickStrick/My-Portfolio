@@ -1,6 +1,7 @@
 $background-base: #282c34;
 $background-light: #4b566e;
 $highlight: #76E7B3;
+$contac-back: #363e3f;
 
 .contact-section{
     padding: 80px 30px;
@@ -12,7 +13,7 @@ $highlight: #76E7B3;
     background: #4b566e;
 
     .contact-form{
-        background: #363e3f;
+        background: $contac-back;
         
         border-top: 2px solid lightgray;
         border-bottom: 2px solid lightgray;
@@ -38,9 +39,8 @@ $highlight: #76E7B3;
                 font-size: 1.1rem;
                 width: 45%;
                 padding: 15px 15px 10px;
-                border-bottom: 3px solid $background-light;
-                box-shadow: 2px 5px 1px $highlight;
-                border-right: 3px solid $background-light;
+                border: 5px solid $contac-back;
+                box-shadow: 2px 3px 1px $highlight;
                 border-radius: 5px;
             }
             
@@ -51,9 +51,8 @@ $highlight: #76E7B3;
             width: 90%;
             padding: 15px;
             border-radius: 5px;
-            border-bottom: 3px solid $background-light;
-            box-shadow: 2px 5px 1px $highlight;
-            border-right: 3px solid $background-light;
+            border: 5px solid $contac-back;
+            box-shadow: 2px 3px 1px $highlight;
         }
 
     }
