@@ -64,9 +64,11 @@ const Navbar = (props) => {
                     </div>
 
                     <div className='nav-list'>
-                        <a className='nav-item' href='#portfolio'>Portfolio</a>
-                        <a className='nav-item' href='#skills'>Skills</a>
-                        <a className='nav-item' href='#contact-info'>Contact</a>
+                        {props.location.pathname === '/' && <React.Fragment>
+                            <a className='nav-item' href='#portfolio'>Portfolio</a>
+                            <a className='nav-item' href='#skills'>Skills</a>
+                            <a className='nav-item' href='#contact-info'>Contact</a></React.Fragment>}
+                        {props.location.pathname !== '/' && <p className='nav-item' onClick={logoClick} >Home</p>}
                     </div>
 
                 </div>
