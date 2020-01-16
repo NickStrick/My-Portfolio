@@ -7,6 +7,7 @@ const Navbar = (props) => {
     const [pinText, setPinText] = useState('OpacityOn');
     const [navClass, setNavClass] = useState('top');
     const [scrollNum, setScroll] = useState(window.scrollY);
+    const [mouseIn, setMouseIn] = useState(false);
 
     function updateScroll() {
         if (window.scrolly !== scrollNum) {
@@ -14,10 +15,24 @@ const Navbar = (props) => {
         }
 
     }
+    function navMouseover(dir) {
+        console.log('enter', pinText)
+        if (dir === 'in') {
+            setMouseIn(true)
+        } else {
+            setMouseIn(false)
+        }
+
+    }
     window.addEventListener('scroll', () => updateScroll());
 
+
     useEffect(() => {
-        if (window.scrollY < 100) {
+        document.getElementById('navHover').addEventListener('mouseenter', () => navMouseover('in'));
+        document.getElementById('navHover').addEventListener('mouseleave', () => navMouseover('out'));
+    }, [])
+    useEffect(() => {
+        if (window.scrollY < 100 || mouseIn) {
             if (pinText != 'OpacityOn') {
                 setPinText('OpacityOn');
                 setNavClass('top')
@@ -41,8 +56,8 @@ const Navbar = (props) => {
     return (
         <>
             <div className={`nav-background ${pinText}`}><h3>Nick</h3></div>
-            <div className={`nav-back ${pinText}`}>
-                <div className={`nav-bar ${navClass}`}>
+            <div className={`nav-back ${pinText}`} id='navHover'>
+                <div className={`nav-bar ${navClass}`} >
                     <div className='logo' onClick={logoClick}>
                         <img src={logo} />
                         <h3>Nick</h3>
