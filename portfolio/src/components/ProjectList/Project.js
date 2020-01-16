@@ -21,10 +21,10 @@ const Project = (props) => {
 
                 <p aria-label={'project-description'}>{description}</p>
                 <button target="_blank" onClick={projectPage}>Learn More</button>
-                <div className='project-links'>
+                {/* <div className='project-links'>
 
                     <img src={gitLogo} target="_blank" onClick={() => window.open(link)} />
-                    {props.project.deployed && <button target="_blank" onClick={() => window.open(props.project.deployed)}>Site</button>}</div>
+                    {props.project.deployed && <button target="_blank" onClick={() => window.open(props.project.deployed)}>Site</button>}</div> */}
 
             </div>
 
