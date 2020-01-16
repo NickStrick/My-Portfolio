@@ -44,6 +44,7 @@
         width: 500px;
         margin-bottom: 40px;
         .info-item{
+          align-self: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -56,10 +57,12 @@
     }
     .project-links{
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
+        align-items: flex-start;
         flex-direction: row-reverse;
+        margin-bottom: 25px;
         button{
-          margin: 25px 10px 0 0;
+          margin: 0 10px 0 0;
         //   width: 80px;  
           align-self: flex-start;
           padding: 14px 40px;
@@ -68,7 +71,7 @@
           border-bottom: none;
           width: 50px;
           height: 50px;
-          margin: 25px 10px 0 0;
+          margin: 0 10px 0 0;
         
           align-self: flex-start;
         }
