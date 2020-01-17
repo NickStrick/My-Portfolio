@@ -2,9 +2,24 @@ $background-base: #282c34;
 $background-light: #4b566e;
 $highlight: #76E7B3;
 
+.pfp-background{
+    margin: 0 auto;
+    padding: 180px 0 185px;
+    display: flex;
+    justify-content: center;
+    #pfp{
+        width: 300px;
+        border-radius: 140px;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+
 .App-header {
     background-color: $background-base;
-    min-height: 600px;
+    min-height: 400px;
+
     margin-left: 2%;
     display: flex;
     flex-direction: column;
@@ -12,30 +27,23 @@ $highlight: #76E7B3;
     justify-content: flex-start;
     font-size: 2rem;
     color: white;
-    padding-top: 150px;
+    // padding-top: 150px;
   }
 
 .App-header{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-
-    margin-bottom: 50px;
-    #pfp{
-        width: 300px;
-        border-radius: 140px;
-        align-self: center;
-        justify-self: center;
-    }
+    margin: 0 50px 30px;
     .header-title{
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         h1{
             margin-bottom: 0;
             padding-bottom: 0;
         }   
     }
     #moto{
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
     
     //social icons
@@ -82,16 +90,17 @@ $highlight: #76E7B3;
         transition:  font-size .3s ease-in
     }
     .summary{
-        height: 0px;
+        height: 100%;
+        max-height: 0px;
         padding: 0px 40px 0px 15px;
         overflow: hidden;
-        font-size: 1rem;
+        font-size: 1.1rem;
 
-        transition:  height .3s ease-in,margin .2s ease;
+        transition:  max-height .8s ease-out,margin 1s ease;
     }
     .summary.open{
-        height: 300px;
-        transition:  height .3s ease-in,margin .2s ease;
+        max-height: 3000px;
+        transition:  max-height .8s ease-in,margin 1s ease;
     }
 
 }

@@ -10,7 +10,7 @@ $highlight: #76E7B3;
   background-image: url('./images/image2vector.svg');
   background-color: $background-base;
   background-repeat: repeat;
-  background-size: 102vh;
+  background-size: 100vw;
   background-attachment: fixed;
   padding-bottom: 70px;
 
@@ -20,9 +20,10 @@ $highlight: #76E7B3;
   background-color: $background-base;
   margin: 0 auto;
   max-width: 1300px;
-  box-shadow: 1px 40px 30px $background-base;
+  box-shadow: 0 10px 5px $background-base;
   padding-bottom: 20px;
 }
+
 button{
   background: white;
   border: 2px solid white;
@@ -55,7 +56,7 @@ button:hover{
     font-size: 1.9rem;
     text-align: center;
     background: $background-light;
-    margin-top: 55px;
+    margin-top: 100px;
     margin-bottom: 55px;
   }
   .projects-columns{
@@ -95,31 +96,14 @@ button:hover{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-
-        .project-links{
-          display: flex;
-          justify-content: flex-start;
-          flex-direction: row-reverse;
-          button{
-            margin: 25px 10px 0 0;
-          
-            align-self: flex-end;
-          }
-          img{
-            border-bottom: none;
-            width: 40px;
-            height: 40px;
-            margin: 25px 10px 0 0;
-          
-            align-self: flex-end;
-          }
-          img:hover{
-            cursor: pointer;
-          }
-          button:hover{
-            cursor: pointer;
-          }
+        button{
+          width: 80%;
+          padding: 13px 0;
+          margin: 0 auto;
+          margin-top: 20px;
+          font-size: 1.2rem;
         }
+
       }
       
   
@@ -128,8 +112,8 @@ button:hover{
       .info{
         max-height: 500px;
         transition:  max-height .3s ease-in,margin .2s ease, padding .2s ease;
-        padding: 0 30px 30px;
-        margin-bottom: 25px;
+        padding: 0 30px 15px;
+        margin-bottom: 15px;
         
       } // info
     } //item:hover

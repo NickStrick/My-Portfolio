@@ -1,3 +1,8 @@
+$background-base: #282c34;
+$background-light: #4b566e;
+$highlight: #76E7B3;
+$contac-back: #363e3f;
+
 .contact-section{
     padding: 80px 30px;
     padding-bottom: 110px;
@@ -8,10 +13,10 @@
     background: #4b566e;
 
     .contact-form{
-        background: #363e3f;
+        background: $contac-back;
         
-        border-top: 1px solid lightgray;
-        border-bottom: 1px solid lightgray;
+        border-top: 2px solid lightgray;
+        border-bottom: 2px solid lightgray;
         margin: 0 auto;
         width: 65%;
         display:flex;
@@ -20,7 +25,9 @@
         align-items: center;
         margin-top: 10px;
         padding: 60px 20px 45px;
-        box-shadow: 2px 10px 20px #888888;
+        box-shadow: 2px 15px 15px $background-base;
+        border-radius: 3px;
+        // #888888
 
         .contact-div{
             
@@ -32,6 +39,9 @@
                 font-size: 1.1rem;
                 width: 45%;
                 padding: 15px 15px 10px;
+                border: 5px solid $contac-back;
+                box-shadow: 2px 3px 1px $highlight;
+                border-radius: 5px;
             }
             
         }
@@ -40,7 +50,15 @@
             font-size: 1.1rem;
             width: 90%;
             padding: 15px;
+            border-radius: 5px;
+            border: 5px solid $contac-back;
+            box-shadow: 2px 3px 1px $highlight;
         }
 
     }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $background-base;
+        opacity: .65; /* Firefox */
+      }
 }
