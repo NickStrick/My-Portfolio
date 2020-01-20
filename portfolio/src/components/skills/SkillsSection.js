@@ -29,7 +29,6 @@ const SkillsSection = () => {
         { skill: 'Git', logo: gitLogo },
         { skill: 'Postgres', logo: postgresLogo }
     ]
-    console.log(skillList[0])
 
     return (
         <div className="skills">
