@@ -31,7 +31,7 @@ const pData = [
   },
   {
     name: "Jango Rango Dungeon",
-    description: 'This project randomly Generates a map of 100 or more rooms. I used my knowledege of serach algorithms and data structures to procedurally generate a dungeon and be able to traverse it. We used django to send information of the dungeon to the frontend.',
+    description: 'This project randomly Generates a map of 100 or more rooms. I used my knowledge of search algorithms and data structures to procedural generate a dungeon and be able to traverse it. We used Django to send information of the dungeon to the front end.',
     img: rangoLogo,
     link: 'https://github.com/CS-multiplayer',
     deployed: 'https://jango-rango-dungeon.netlify.com/',
@@ -80,19 +80,19 @@ const pData = [
     contribution: 'I was responsible for maintaining momentum by overseeing project planning and updates, leading meetings, maintaining manager and stakeholder relationships, communicating effectively, solving conflicts, deployment, and debugging as well as contributing to the authentication of the app whenever possible.'
 
   },
-  // {
-  //   name: "Luncher App",
-  //   description: 'There are kids today in this country who go without student lunches. This app allows schools to broadcast the needs of their students by declaring an amount of donations that they would need to be fullfilled in order to provide lunches for those that go without.',
-  //   img: luncherLogo,
-  //   link: 'https://github.com/luncher-team/LA-Backend-Nick-Stricker',
-  //   deployed: 'https://luncherappltrii.netlify.com/',
-  //   role: 'Wed Developer',
-  //   techUsed: ['ReactJs', 'Express', 'Postgres', 'Cloudinary', 'PassportJS'],
-  //   teamMemebers: 6,
-  //   weeksCompleted: 5,
-  //   contribution: 'I primary worked with the frontend on this project. i used auth0 and passportJS to create the authentication for our users database. I set up the projects routes on the database and used knex to template and seed our database.'
+  {
+    name: "Luncher App",
+    description: 'There are kids today in this country who go without student lunches. This app allows schools to broadcast the needs of their students by declaring an amount of donations that they would need to be fullfilled in order to provide lunches for those that go without.',
+    img: luncherLogo,
+    link: 'https://github.com/luncher-team/LA-Backend-Nick-Stricker',
+    deployed: 'https://luncherappltrii.netlify.com/',
+    role: 'Wed Developer',
+    techUsed: ['ReactJs', 'Express', 'SQL', 'BcryptJS'],
+    teamMemebers: 3,
+    weeksCompleted: 1,
+    contribution: 'I primary worked with the frontend on this project. i used auth0 and passportJS to create the authentication for our users database. I set up the projects routes on the database and used knex to template and seed our database.'
 
-  // },
+  },
   // {
   //   name: "CS build week 2",
   //   description: 'In this project i tested my algorithm skills and traversed a 500 room dungeon, followed clues and mined a blockchain coin. I used my knowledge of search algorithms and graphs in order to mine a coin in the right location in the graph.',
