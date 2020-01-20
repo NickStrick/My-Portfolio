@@ -3,6 +3,9 @@ $background-light: #4b566e;
 $highlight: #76E7B3;
 $contac-back: #363e3f;
 
+$mobile: 700px;
+
+
 .contact-section{
     padding: 80px 30px;
     padding-bottom: 110px;
@@ -54,6 +57,9 @@ $contac-back: #363e3f;
             
         }
         textarea{
+            height: 100%;
+            min-height: 150px;
+            max-height: 400px;
             margin-top: 10px;
             font-size: 1.1rem;
             width: 90%;
@@ -61,6 +67,8 @@ $contac-back: #363e3f;
             border-radius: 5px;
             border: 5px solid $contac-back;
             box-shadow: 2px 3px 1px $highlight;
+            overflow-x: hidden;
+            overflow-y: auto;
         }
         textarea::selection{
             color: $highlight;
@@ -77,4 +85,14 @@ $contac-back: #363e3f;
         color: $background-base;
         opacity: .65; /* Firefox */
       }
+}
+
+@media (max-width: $mobile) {
+    .contact-section{
+
+        .contact-form{
+            width: 100%;
+        }
+    }
+  
 }
