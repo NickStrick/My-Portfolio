@@ -15,6 +15,12 @@ $mobile: 700px;
     align-items: center;
     background: #4b566e;
 
+    .contact-head{
+        font-size: 1.9rem;
+        font-weight: bold;
+        margin:  0 0 25px;
+    }
+
     .contact-form{
         background: $contac-back;
         
@@ -81,7 +87,7 @@ $mobile: 700px;
         }
 
         button{
-            margin-top: 20px;
+            margin-top: 30px;
             font-size: 1.1rem;
             border: 2px solid lightgray;
             background-color: lightgray;
@@ -92,7 +98,8 @@ $mobile: 700px;
         button:hover{
             background-color: $contac-back;
             border: 2px solid $highlight;
-            box-shadow: 0 5px 1px $highlight;
+            border-bottom: 2px solid $contac-back;
+            box-shadow: 0 -3px 1px $highlight;
         }
 
     }

@@ -54,7 +54,7 @@ const Contactinfo = (props) => {
 
     return (
 
-        <div className="contact-section" id='contact-info'><label>Send me a message!</label>
+        <div className="contact-section" id='contact-info'><label className='contact-head'>Send me a message!</label>
             <form className='contact-form' onSubmit={submitContact} >
 
                 <div className='contact-div'>
