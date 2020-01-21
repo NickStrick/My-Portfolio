@@ -18,7 +18,6 @@ const Home = () => {
         }
 
     }
-    console.log(sumOpen)
 
 
     const summary1 = 'Hi, I\'m Nick. I\'m a full stack web developer that loves problem sovling and exploring the world of software.'

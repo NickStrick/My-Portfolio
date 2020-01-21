@@ -2,6 +2,10 @@
 $background-base: #282c34;
 $background-light: #4b566e;
 $highlight: #76E7B3;
+$mobile: 700px;
+@media (min-width: $mobile) {
+  
+}
 
 *{
   box-sizing: border-box;
@@ -124,3 +128,51 @@ button:hover{
 
 
 
+@media (max-width: $mobile) {
+
+
+
+  // # project styling
+.projects{
+  // background: red;
+
+  .port-head{
+
+  }
+  .projects-columns{
+    width: 100%;
+    flex-direction: column;
+
+    .project-list{
+      width: 100%;
+
+    }
+    .item{
+
+  
+      .title{
+
+      }
+      img{
+
+      }
+      .info{
+
+        button{
+
+        }
+
+      }
+      
+  
+    }
+    .item:hover{
+      .info{
+
+        
+      } // info
+    } //item:hover
+  } // projects-columns
+}
+  
+}
