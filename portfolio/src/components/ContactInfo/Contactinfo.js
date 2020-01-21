@@ -97,7 +97,7 @@ const Contactinfo = (props) => {
                     placeholder='Type your message here'
                     name='msg'
                 />
-                <button type='Submit'>Submit</button>
+                <button type='Submit'>➤ Send  &nbsp; </button>
 
             </form>
 
