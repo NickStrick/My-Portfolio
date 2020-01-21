@@ -90,7 +90,7 @@ const pData = [
     techUsed: ['ReactJs', 'Express', 'SQL', 'BcryptJS'],
     teamMemebers: 3,
     weeksCompleted: 1,
-    contribution: 'I primary worked with the frontend on this project. i used auth0 and passportJS to create the authentication for our users database. I set up the projects routes on the database and used knex to template and seed our database.'
+    contribution: 'I was Solely responsible for the Back end of this project. Some key features were authentication, ability to register and edit user data, creating, editing and deleteing fundraising projects as well as donating to projects or organizations. I worked well with a team of two frontend react engineers, and helped them debug to get our product fully functional.'
 
   },
   // {

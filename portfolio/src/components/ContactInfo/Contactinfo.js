@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import './Contactinfo.scss';
 
 const Contactinfo = (props) => {
@@ -8,27 +9,26 @@ const Contactinfo = (props) => {
     const [email, setEmail] = useState('')
     const [msg, setMsg] = useState('')
 
-    const [getTex, setTex] = useState(0)
-    // console.log('getTex: ', getTex)
+    useEffect(() => {
+        axios.get('https://vast-meadow-92170.herokuapp.com/')
+            .then(res => console.log(res.data))
+    }, [])
 
-    // useEffect(() => {
-    //     const myTex = document.getElementById('contact-msg')
-    //     myTex.addEventListener('keypress', function (e) {
-    //         // console.log(e.target, e.key);
-    //         texSetNewLine(e.target, e.key)
+    function submitContact(e) {
+        e.preventDefault();
+        const contactInput = {
+            firstName,
+            lastName,
+            phone: number,
+            email,
+            message: msg
+        }
 
-    //     })
-    // }, [])
+        axios.post('https://vast-meadow-92170.herokuapp.com/contact', contactInput)
+            .then(res => console.log('successful submit: ', !!res.data))
+            .catch(err => console.log('contact submit atempt fail', err))
+    }
 
-    // function texSetNewLine(tex, key) {
-    //     if (key && key === 'Enter') {
-    //         console.log('add line')
-    //     }
-    //     if (tex.value.length > 80 && tex.value.length % 82 == 0) {
-    //         console.log('add line')
-    //     }
-
-    // }
 
     function handleChange(e) {
         switch (e.target.name) {
@@ -51,24 +51,11 @@ const Contactinfo = (props) => {
         }
     }
 
-    // function SetNewSize(textarea) {
-    //     // console.log(textarea)
-    //     // console.log('getTex: ', getTex)
-    //     if (textarea.value.length)
-    //     setTex(textarea.value.length)
-
-    //     if (textarea.rows <= 20) {
-    //         textarea.rows += 1;
-    //     } else {
-    //         // textarea.cols = 10;
-    //         // textarea.rows = 15;
-    //     }
-    // }
 
     return (
 
         <div className="contact-section" id='contact-info'><label>Send me a message!</label>
-            <form className='contact-form'>
+            <form className='contact-form' onSubmit={submitContact} >
 
                 <div className='contact-div'>
                     {/* <label></label> */}
@@ -110,6 +97,7 @@ const Contactinfo = (props) => {
                     placeholder='Type your message here'
                     name='msg'
                 />
+                <button type='Submit'>Submit</button>
 
             </form>
 
