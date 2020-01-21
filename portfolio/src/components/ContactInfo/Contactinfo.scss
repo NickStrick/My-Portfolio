@@ -19,7 +19,7 @@ $mobile: 700px;
         background: $contac-back;
         
         border-top: 2px solid lightgray;
-        border-bottom: 2px solid lightgray;
+        border-bottom: 5px solid lightgray;
         margin: 0 auto;
         width: 65%;
         display:flex;
@@ -27,7 +27,7 @@ $mobile: 700px;
         justify-content: space-between;
         align-items: center;
         margin-top: 10px;
-        padding: 60px 20px 45px;
+        padding: 60px 20px 0;
         box-shadow: 2px 15px 15px $background-base;
         border-radius: 3px;
         // #888888
@@ -38,6 +38,7 @@ $mobile: 700px;
             display: flex;
             justify-content: space-between;
             margin-bottom: 30px;
+            
             input{
                 font-size: 1.1rem;
                 width: 45%;
@@ -77,6 +78,21 @@ $mobile: 700px;
             outline-color: $highlight;
             outline-style: groove;
             outline-width: .3rem;
+        }
+
+        button{
+            margin-top: 20px;
+            font-size: 1.1rem;
+            border: 2px solid lightgray;
+            background-color: lightgray;
+            // box-shadow: 2px -3px 1px $highlight;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        button:hover{
+            background-color: $contac-back;
+            border: 2px solid $highlight;
+            box-shadow: 0 5px 1px $highlight;
         }
 
     }
