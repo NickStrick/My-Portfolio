@@ -51,6 +51,10 @@ const Navbar = (props) => {
         }
 
     }
+    function linkClick(route) {
+        let element = document.getElementById(route)
+        element.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+    }
 
     return (
         <>
@@ -64,9 +68,9 @@ const Navbar = (props) => {
 
                     <div className='nav-list'>
                         {props.location.pathname === '/' && <React.Fragment>
-                            <a className='nav-item' href='#portfolio'>Portfolio</a>
-                            <a className='nav-item' href='#skills'>Skills</a>
-                            <a className='nav-item' href='#contact-info'>Contact</a></React.Fragment>}
+                            <navbutton className='nav-item' onClick={ () => linkClick('portfolio')}>Portfolio</navbutton>
+                            <navbutton className='nav-item' onClick={ () => linkClick('skills')}>Skills</navbutton>
+                            <navbutton className='nav-item' onClick={ () => linkClick('contact-info-id')}>Contact</navbutton></React.Fragment>}
                         {props.location.pathname !== '/' && <p className='nav-item' onClick={logoClick} >Home</p>}
                     </div>
 
