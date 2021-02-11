@@ -3,7 +3,6 @@ import './Home.scss';
 import gitLogo from '../images/GitHub-Mark-Light-64px.png';
 import linkedin from '../images/linkedin-2.svg';
 import mail from '../images/mail-100.png';
-import Pfp from '../images/pfp.jpg';
 
 const Home = () => {
     const [sumBtn, setBtn] = useState(`sumBtn sumBtnClose`)
@@ -31,7 +30,7 @@ const Home = () => {
                 <h1>Nick Stricker</h1>
                 <div className='social-icons'>
                     <img src={gitLogo} className='gitLogo git' target="_blank" onClick={() => window.open('https://github.com/NickStrick')} />
-                    <img src={linkedin} className='gitLogo linkedin' target="_blank" onClick={() => window.open('https://www.linkedin.com/in/nick-stricker-1ba8a7192/')} />
+                    <img src={linkedin} className='gitLogo linkedin' target="_blank" onClick={() => window.open('https://www.linkedin.com/in/nick-stricker/')} />
                 </div>
             </div>
 
