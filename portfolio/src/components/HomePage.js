@@ -21,7 +21,7 @@ const HomePage = (props) => {
 
             <div className="container home-container">
                 <Home />
-                <div id='portfolio'></div>
+                <div id='projects'></div>
                 <ProjectList projects={props.projects} history={props.history} />
                 <div id='skills'></div>
                 <SkillsSection />

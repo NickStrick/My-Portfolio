@@ -11,7 +11,7 @@ const ProjectList = (props) => {
 
 
             <div className="projects" >
-                <h1 className='port-head'>Portfolio</h1>
+                <h1 className='port-head'>Projects</h1>
                 <div className='projects-columns'>
                     {/* <div className='project-list'>
                         {props.projects.map((project, index) => {

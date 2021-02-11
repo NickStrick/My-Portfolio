@@ -68,7 +68,7 @@ const Navbar = (props) => {
 
                     <div className='nav-list'>
                         {props.location.pathname === '/' && <React.Fragment>
-                            <navbutton className='nav-item' onClick={ () => linkClick('portfolio')}>Portfolio</navbutton>
+                            <navbutton className='nav-item' onClick={ () => linkClick('projects')}>Projects</navbutton>
                             <navbutton className='nav-item' onClick={ () => linkClick('skills')}>Skills</navbutton>
                             <navbutton className='nav-item' onClick={ () => linkClick('contact-info-id')}>Contact</navbutton></React.Fragment>}
                         {props.location.pathname !== '/' && <p className='nav-item' onClick={logoClick} >Home</p>}
