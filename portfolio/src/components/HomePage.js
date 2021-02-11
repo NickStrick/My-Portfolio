@@ -8,12 +8,15 @@ import SkillsSection from './skills/SkillsSection.js';
 import Pfp from '../images/pfp.jpg';
 import PfpThree from '../images/pfp3.jpg';
 
+
 const HomePage = (props) => {
 
     return (
         <React.Fragment>
             <div className='pfp-background'>
-                <img id='pfp' src={PfpThree} alt='Nick S profile picture' />
+                <div className='pfp-overflow'>
+                <img id='pfp' src={PfpThree} alt='Nick S profile picture' /></div>
+
             </div>
 
             <div className="container home-container">
