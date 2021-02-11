@@ -9,14 +9,15 @@ $highlight: #76E7B3;
     justify-content: center;
     .pfp-overflow{
         // width: 380px
-        padding: 10px;
-        border-radius: 150px;
+        padding: 7px;
+        border-radius: 147px;
         align-self: center;
         justify-self: center;
-        background: white;
+        background: rgb(1, 206, 110);
         display: flex;
     }
     #pfp{
+        border: 5px solid white;
         width: 340px;
         border-radius: 140px;
         align-self: center;
@@ -29,8 +30,7 @@ $highlight: #76E7B3;
 
 .App-header {
     background-color: $background-base;
-    min-height: 400px;
-
+    min-height: 200px;
     margin-left: 2%;
     display: flex;
     flex-direction: column;
