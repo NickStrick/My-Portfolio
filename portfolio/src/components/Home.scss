@@ -4,15 +4,26 @@ $highlight: #76E7B3;
 
 .pfp-background{
     margin: 0 auto;
-    padding: 180px 0 185px;
+    padding: 140px 0 175px;
     display: flex;
     justify-content: center;
+    .pfp-overflow{
+        // width: 380px
+        padding: 10px;
+        border-radius: 150px;
+        align-self: center;
+        justify-self: center;
+        background: white;
+        display: flex;
+    }
     #pfp{
-        width: 300px;
+        width: 340px;
         border-radius: 140px;
         align-self: center;
         justify-self: center;
+        margin: 0 auto;
     }
+
 }
 
 
@@ -35,40 +46,61 @@ $highlight: #76E7B3;
     justify-content: flex-start;
     align-items: flex-start;
     margin: 0 50px 30px;
-    .header-title{
-        margin-bottom: 100px;
-        h1{
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }   
-    }
+    position: relative;
     #moto{
         margin-bottom: 10px;
     }
-    
-    //social icons
-    .social-icons{
-        display: flex;
 
+    .header-title{
+        // margin-bottom: 100px;
+        // width: 150%;
+        min-width: 320px;
+        max-width: 450px;
+        position: absolute;
+        left: -50px;
+        top: -140px;
+        background-color:  rgba(40,44,52, 1);
+        padding: 20px;
+        min-height: 140px;
+        max-height: 145px;
+        overflow: none;
+        
+        
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        
+        h1{
+            font-size: 3.95rem;
+            color: white;
+            margin: 0;
+            padding-bottom: 0;
+        }
+        //social icons
+        .social-icons{
+            display: flex;
+
+        }
+        .gitLogo{
+            opacity: .75;
+            color: white;
+            margin-right: 10px;
+        }
+        .gitLogo:hover{
+            opacity: 1;
+            cursor: pointer;
+        }
+        .git{
+            height: 30px;
+        }
+        .mail{
+            width: 26px;
+        }
+        .linkedin{
+            width: 30px;
+        }   
     }
-    .gitLogo{
-        opacity: .6;
-        color: white;
-        margin-right: 10px;
-    }
-    .gitLogo:hover{
-        opacity: 1;
-        cursor: pointer;
-    }
-    .git{
-        height: 30px;
-    }
-    .mail{
-        width: 26px;
-    }
-    .linkedin{
-        width: 30px;
-    }
+
+    
 
     // summary
     .sumBtn{
@@ -103,4 +135,13 @@ $highlight: #76E7B3;
         transition:  max-height .8s ease-in,margin 1s ease;
     }
 
+}
+
+@media (max-width: 550px){
+    .App-header {
+        .header-title h1{
+        font-size: 2.8rem;
+
+    }
+}
 }
