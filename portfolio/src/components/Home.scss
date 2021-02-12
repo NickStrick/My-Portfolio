@@ -48,7 +48,7 @@
     position: relative;
     line-height: 1.9rem;
     #moto{
-        margin: 80px 0 0;
+        margin: 130px 0 0;
         align-self: center;
         text-align: center;
         color: $highlight;
@@ -144,7 +144,7 @@
     .summary{
         height: 100%;
         max-height: 0px;
-        padding: 0px 40px 0px 15px;
+        // padding: 0px 40px 0px 15px;
         overflow: hidden;
         font-size: 1.3rem;
 
@@ -172,6 +172,12 @@
     }
     .App-header {
         margin: 0 2% 30px;
+        #intro{
+            margin-left: 1.5%;
+        }
+        .summary-item{
+            margin-left: 1.5%;
+        }
         
         .header-title{
             min-width: 0;
