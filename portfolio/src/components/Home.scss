@@ -45,10 +45,17 @@ $highlight: #76E7B3;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0 50px 30px;
+    margin: 0 100px 30px;
     position: relative;
     #moto{
-        margin-bottom: 10px;
+        margin: 50px 0 0;
+        align-self: center;
+        text-align: center;
+    }
+    #intro{
+        font-size:1.35rem;
+        margin-top: 70px;
+        margin-bottom: 20px;
     }
 
     .header-title{
@@ -57,7 +64,7 @@ $highlight: #76E7B3;
         min-width: 320px;
         max-width: 450px;
         position: absolute;
-        left: -50px;
+        left: -100px;
         top: -140px;
         background-color:  rgba(40,44,52, 1);
         padding: 20px;
@@ -116,6 +123,15 @@ $highlight: #76E7B3;
     .sumBtn:hover{
         color: $highlight;
     }
+    .sumBtn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #read-more{
+            font-size:2rem;
+        }
+
+    }
 
     .sumBtnClose{
         font-size: 1.6rem;
@@ -126,7 +142,7 @@ $highlight: #76E7B3;
         max-height: 0px;
         padding: 0px 40px 0px 15px;
         overflow: hidden;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
 
         transition:  max-height .8s ease-out,margin 1s ease;
     }
