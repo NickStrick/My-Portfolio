@@ -4,6 +4,7 @@ import Home from './Home.js';
 import ProjectList from './ProjectList/ProjectList.js';
 import Contactinfo from './ContactInfo/Contactinfo.js';
 import SkillsSection from './skills/SkillsSection.js';
+import CertificateSection from './certificates/Certificate.js'
 
 import Pfp from '../images/pfp.jpg';
 import PfpThree from '../images/pfp3.jpg';
@@ -25,6 +26,7 @@ const HomePage = (props) => {
                 <ProjectList projects={props.projects} history={props.history} />
                 <div id='skills'></div>
                 <SkillsSection />
+                <CertificateSection/>
                 <Contactinfo />
             </div>
         </React.Fragment>
