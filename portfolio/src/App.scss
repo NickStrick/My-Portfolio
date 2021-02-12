@@ -72,16 +72,25 @@ button:hover{
     .project-list{
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
+      align-items: flex-start;
       flex-direction: column;
       // height: 3000px;
       width: 50%;
     }
+    .project-list:first-child{
+      align-items: flex-end;
+      .item{
+        margin-left: 0;
+        margin-right: 15px;
+
+      }
+    }
     .item{
+      margin-left: 15px;
       border-radius: 12px;
-      width:88%;
+      width:84%;
       background: #363e3f;
-      margin-bottom: 50px;
+      margin-bottom: 80px;
       overflow: hidden;
       box-shadow: 10px 25px 18px #131B29;
       border-bottom: 8px solid $highlight;
@@ -90,11 +99,17 @@ button:hover{
         text-align: center;
         font-size: 1.8rem;
       }
-      img{
+      .img-overflow{
+        width: 100%;
+        height: 20rem;
+        overflow: hidden;
+        img{
         border-bottom: 5px solid $background-base;
         width: 100%;
-        height: 26rem;
+        // height: 26rem;
       }
+      }
+      
       .info{
         max-height: 0;
 
@@ -138,44 +153,27 @@ button:hover{
   // # project styling
 .projects{
   // background: red;
-
-  .port-head{
-
-  }
   .projects-columns{
     width: 100%;
     flex-direction: column;
+    
+    .item{
+      margin-left: 0;
+    }
 
     .project-list{
       width: 100%;
-
+      align-items: center;
     }
-    .item{
-
-  
-      .title{
-
-      }
-      img{
+    .project-list:first-child{
+      align-items: center;
+      .item{
+        margin-right: 0;
 
       }
-      .info{
-
-        button{
-
-        }
-
-      }
-      
-  
     }
-    .item:hover{
-      .info{
-
-        
-      } // info
-    } //item:hover
-  } // projects-columns
+ //item:hover
+  // projects-columns
 }
-  
+}
 }
