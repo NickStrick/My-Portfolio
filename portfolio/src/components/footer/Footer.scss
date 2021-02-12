@@ -1,12 +1,12 @@
-$highlight: #76E7B3;
+@import '../../utilities/imports.scss';
 
 .footer{
     // background: red;
     
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin-top: 40px;
 
@@ -19,10 +19,12 @@ $highlight: #76E7B3;
         cursor: pointer;
     }
     .git{
-        height: 50%;
+        height: 60px;
+        margin-right: 100px;
     }
     .mail{
         width: 60px;
+        margin-left: 100px;
     }
 
     .mail-div{
@@ -98,3 +100,24 @@ $highlight: #76E7B3;
     }
 }
 
+
+@media (max-width: $mobile){
+    .footer{
+        .git{
+            margin-right: 75px;
+        }
+        .mail{
+            margin-left: 75px;
+        }
+    }
+}
+@media (max-width: $small-mobile){
+    .footer{
+        .git{
+            margin-right: 35px;
+        }
+        .mail{
+            margin-left: 35px;
+        }
+    }
+}
