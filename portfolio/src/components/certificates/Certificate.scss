@@ -1,6 +1,4 @@
-$background-base: #282c34;
-$background-light: #4b566e;
-$highlight: #76E7B3;
+@import '../../utilities/imports.scss';
 
 .certificates{
     margin: 55px 2% 80px;
@@ -50,4 +48,18 @@ $highlight: #76E7B3;
 /* Social buttons */
 .cert-list .image.lambda-cert{
     background-image: url('../../images/certs/full-stack-web-development.png');
+}
+
+@media (max-width: $small-mobile){
+    .cert-list .image{
+        background-size: contain;
+        width: 100vw;
+        height: 100vw;
+        border-radius: 120px;
+        overflow: hidden;
+    }
+    .cert-list .image div{
+        width: 100vw;
+        height: 100vw;
+}
 }
