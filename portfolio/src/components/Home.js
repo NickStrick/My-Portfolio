@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Home.scss';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+
 import gitLogo from '../images/GitHub-Mark-Light-64px.png';
 import linkedin from '../images/linkedin-2.svg';
 import mail from '../images/mail-100.png';
@@ -13,17 +15,17 @@ const Home = () => {
             setOpen(false)
             setTimeout(() => setBtn('sumBtn sumBtnClose'), 200)
 
-            setTimeout(() => window.scrollBy({
-                top: -50,
-                left: 10,
+            setTimeout(() => 
+                document.querySelector('.header-title').scrollIntoView({
+                top: 500,
                 behavior : "smooth"
                 }), 250)
         } else {
             setOpen(true)
             setTimeout(() => setBtn('sumBtn'), 200)
-            setTimeout(() => window.scrollBy({
-                top: 55,
-                left: 10,
+            setTimeout(() => 
+                document.querySelector('#intro').scrollIntoView({
+                top: 500,
                 behavior : "smooth"
                 }), 250)
             
@@ -55,9 +57,10 @@ const Home = () => {
                     <img src={linkedin} className='gitLogo linkedin' target="_blank" onClick={() => window.open('https://www.linkedin.com/in/nick-stricker/')} />
                 </div>
             </div>
-
+            
+            
             <p id='intro'>{summary1}</p>
-            <button className={sumBtn} onClick={toggleSum}><span>{sumOpen ? '⮙' : '⮛'}</span><span id='read-more'>{sumBtn == 'sumBtn sumBtnClose' && 'read more'}</span></button>
+            <button className={sumBtn} onClick={toggleSum}><span>{sumOpen ? <FontAwesomeIcon icon='chevron-up'/>: <FontAwesomeIcon icon='chevron-down'/>}</span><span id='read-more'>{sumBtn == 'sumBtn sumBtnClose' && 'read more'}</span></button>
 
             <div className={`summary ${sumOpen ? 'open' : ''}`} >
                 <p className='summary-item'>{summary2}</p>
