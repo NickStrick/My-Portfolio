@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Route } from "react-router-dom";
+import './utilities/Fontawesome';
 
 import logo from './logo.svg';
 import riyLogo from './images/RIY.png'
