@@ -16,7 +16,9 @@ const Project = (props) => {
 
         <div className="item">
             <h2 className='title'>{name}</h2>
+            <div className='img-overflow'>
             <img src={img} alt={`${name} smol pic`} />
+            </div>
             <div className="info">
 
                 <p aria-label={'project-description'}>{description}</p>
