@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
 
 $background-base: #282c34;
 $background-light: #4b566e;
@@ -29,14 +31,24 @@ $mobile: 700px;
 }
 
 button{
-  background: white;
+  color: $background-base;;
+  background: rgba(255, 255, 255, .735);
   border: 2px solid white;
   padding: 10px;
   border-radius:5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Russo One', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   
 }
 button:hover{
-    background: $background-base;
+    background: white;
+    color: black;
+
+  }
+  button:active{
+    background:$background-base;
     color: white;
 
   }
