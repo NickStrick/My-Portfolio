@@ -11,15 +11,15 @@ const Project = (props) => {
 
     return (
 
-        <div className="ProjectInfo">
+        <div className="ProjectInfo"><h1 className='title'>{name}</h1>
+            <p aria-label={'project-description'}>{description}</p>
+            <p className='contribution'>{contribution}</p>
             <img className='projectPic' src={img} alt={`${name} pic`} />
             <div className='project-links'>
                 <img src={gitLogo} target="_blank" onClick={() => window.open(link)} />
                 {project.deployed && <button target="_blank" onClick={() => window.open(project.deployed)}>Site</button>}
             </div>
-            <h1 className='title'>{name}</h1>
-            <p aria-label={'project-description'}>{description}</p>
-            <p className='contribution'>{contribution}</p>
+            
             <div className='tech'>
                 <h2>Technologies</h2>
                 <ul>
