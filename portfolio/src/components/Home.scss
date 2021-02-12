@@ -1,6 +1,5 @@
-$background-base: #282c34;
-$background-light: #4b566e;
-$highlight: #76E7B3;
+@import '../utilities/imports.scss';
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
 
 .pfp-background{
     margin: 0 auto;
@@ -45,12 +44,16 @@ $highlight: #76E7B3;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0 100px 30px;
+    margin: 0 10% 30px;
     position: relative;
+    line-height: 1.9rem;
     #moto{
-        margin: 50px 0 0;
+        margin: 80px 0 0;
         align-self: center;
         text-align: center;
+        color: $highlight;
+        // font-weight: bold;
+        font-family: 'Orbitron', sans-serif;
     }
     #intro{
         font-size:1.35rem;
@@ -64,7 +67,7 @@ $highlight: #76E7B3;
         min-width: 320px;
         max-width: 450px;
         position: absolute;
-        left: -100px;
+        left: -10%;
         top: -140px;
         background-color:  rgba(40,44,52, 1);
         padding: 20px;
@@ -79,8 +82,9 @@ $highlight: #76E7B3;
         h1{
             font-size: 3.95rem;
             color: white;
-            margin: 0;
+            margin: 0 0 10px;
             padding-bottom: 0;
+            line-height: 3rem;
         }
         //social icons
         .social-icons{
@@ -142,7 +146,7 @@ $highlight: #76E7B3;
         max-height: 0px;
         padding: 0px 40px 0px 15px;
         overflow: hidden;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
 
         transition:  max-height .8s ease-out,margin 1s ease;
     }
@@ -153,11 +157,30 @@ $highlight: #76E7B3;
 
 }
 
-@media (max-width: 550px){
+@media (max-width: $mobile){
     .App-header {
         .header-title h1{
-        font-size: 2.8rem;
+        font-size: 3.2rem;
 
     }
 }
+}
+
+@media( max-width:$small-mobile){
+    .pfp-background #pfp{
+        width: 100%;
+    }
+    .App-header {
+        margin: 0 2% 30px;
+        
+        .header-title{
+            min-width: 0;
+            width: 94vw;
+            left: -2%;
+            h1{
+            font-size: 2.65rem;
+
+            }
+        }
+    }
 }
