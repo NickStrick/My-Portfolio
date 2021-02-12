@@ -11,7 +11,8 @@ const Project = (props) => {
 
     return (
 
-        <div className="ProjectInfo"><h1 className='title'>{name}</h1>
+        <div className="ProjectInfo">
+            <h1 className='title'>{name}</h1>
             <p aria-label={'project-description'}>{description}</p>
             <p className='contribution'>{contribution}</p>
             <img className='projectPic' src={img} alt={`${name} pic`} />
