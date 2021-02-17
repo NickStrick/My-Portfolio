@@ -13,7 +13,7 @@ const Project = (props) => {
             <div className="info">
                 <h2 className='title'>{name}</h2>
                 <p aria-label={'project-description'}>{description}</p>
-                <button>> &nbsp; &nbsp;Learn More</button>
+                <button> &nbsp; &nbsp;Learn More</button>
             </div>
 
         </div>
