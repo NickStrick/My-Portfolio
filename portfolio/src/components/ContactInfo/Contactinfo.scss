@@ -44,10 +44,14 @@ $mobile: 700px;
             display: flex;
             justify-content: space-between;
             margin-bottom: 30px;
-            
+            div{
+                width: 45%;
+                display:flex;
+                justify-content: center;
+            }
             input{
                 font-size: 1.1rem;
-                width: 45%;
+                width: 100%;
                 padding: 15px 15px 10px;
                 border: 5px solid $contac-back;
                 box-shadow: 2px 3px 1px $highlight;
@@ -108,6 +112,18 @@ $mobile: 700px;
         color: $background-base;
         opacity: .65; /* Firefox */
       }
+
+    .contact-div .required{
+        position: relative;
+    }
+    .contact-div .required::after{
+        position:absolute;
+        left:7px;
+
+        font-size: 1.3rem;
+        content:"*";
+        color:red;
+     }
 }
 
 @media (max-width: $mobile) {
@@ -118,17 +134,13 @@ $mobile: 700px;
             .contact-div{
                 flex-direction: column;
                 align-items: center;
-                input{
-                    font-size: 1.1rem;
+                div{
                     width: 95%;
-                    padding: 15px 15px 10px;
-                    border: 5px solid $contac-back;
-                    box-shadow: 2px 3px 1px $highlight;
-                    border-radius: 5px;
                 }
-                input:first-child{
+                div:first-child input{
                     margin-bottom: 30px;
                 }
+
             }
         }
     }
