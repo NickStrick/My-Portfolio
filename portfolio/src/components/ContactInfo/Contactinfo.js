@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Contactinfo.scss';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+
+import ContactPopup from './ContactPopup.js';
 
 const Contactinfo = (props) => {
     const [firstName, setFirst] = useState('')
@@ -8,23 +11,52 @@ const Contactinfo = (props) => {
     const [number, setNumber] = useState('')
     const [email, setEmail] = useState('')
     const [msg, setMsg] = useState('')
+    const [submitStatus, setSubmitStatus] = useState(0);
 
-    useEffect(() => {
-        axios.get('https://vast-meadow-92170.herokuapp.com/')
-            .then(res => console.log(res.data))
-    }, [])
+    let submitTimeout;
 
-    function submitContact(e) {
+    // useEffect(() => {
+    //     axios.get('https://vast-meadow-92170.herokuapp.com/')
+    //         .then(res => console.log(res.data))
+    // }, [])
+
+    function zeroInputs(){
+        setFirst('');
+        setLast('');
+        setNumber('');
+        setEmail('');
+        setMsg('');
+    }
+    
+    function checkSubmitStatus(e){
         e.preventDefault();
         const contactInput = {
-            firstName,
-            lastName,
-            phone: number,
-            email,
-            message: msg
+                firstName,
+                lastName,
+                phone: number,
+                email,
+                message: msg
+            }
+        if(submitTimeout) clearTimeout(submitTimeout);
+        if (email === '' || firstName === '' || lastName === '' || msg === '' ){
+            setSubmitStatus(2);
+        }else{
+            setSubmitStatus(1);
+            zeroInputs();
+            submitContact(contactInput)
         }
+        
+        submitTimeout = setTimeout(()=> setSubmitStatus(0), 11000)
+    }
 
-        axios.post('https://vast-meadow-92170.herokuapp.com/contact', contactInput)
+    function submitContact(contactInput) {
+
+        
+        const sendgridUrl = 'http://localhost:5000/contact';
+        // const sendgridUrl = 'https://nick-strick-portfolio.herokuapp.com/contact'
+        zeroInputs();
+
+        axios.post( sendgridUrl , contactInput)
             .then(res => console.log('successful submit: ', !!res.data))
             .catch(err => console.log('contact submit atempt fail', err))
     }
@@ -55,39 +87,51 @@ const Contactinfo = (props) => {
     return (
 
         <div className="contact-section" id='contact-info-id'><label className='contact-head'>Send me a message!</label>
-            <form className='contact-form' onSubmit={submitContact} >
+            <form className='contact-form' onSubmit={checkSubmitStatus}  
+            onFocus={() => {
+                if(submitStatus === 2){
+                 setSubmitStatus(0);
+                 if(submitTimeout) clearTimeout(submitTimeout);
+            }}}>
 
                 <div className='contact-div'>
                     {/* <label></label> */}
+                    <div className='required'>
                     <input
+                        
                         aria-label={'first-name'}
                         value={firstName}
                         onChange={handleChange}
                         placeholder='First name'
                         name='firstName'
-                    />
+                    /></div>
+                    <div className='required'>
                     <input
                         value={lastName}
                         onChange={handleChange}
                         placeholder='Last name'
                         name='lastName'
-                    />
+                    /></div>
                 </div>
+                
                 <div className='contact-div'>
                     {/* <label></label> */}
+                    <div>
                     <input
                         aria-label={'last-name'}
                         value={number}
                         onChange={handleChange}
                         placeholder='Phone Number'
                         name='number'
-                    />
+                    /></div>
+                    <div className='required'>
                     <input
                         value={email}
                         onChange={handleChange}
                         placeholder='Your Email'
                         name='email'
-                    />
+                        type='email'
+                    /></div>
                 </div>
                 <textarea
                     id='contact-msg'
@@ -97,7 +141,8 @@ const Contactinfo = (props) => {
                     placeholder='Type your message here'
                     name='msg'
                 />
-                <button type='Submit'>➤ Send  &nbsp; </button>
+                {submitStatus > 0 && <ContactPopup submitStatus={submitStatus} />}
+                <button type='Submit'><FontAwesomeIcon icon='paper-plane'/> Send  &nbsp; </button>
 
             </form>
 
