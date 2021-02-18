@@ -52,8 +52,8 @@ const Contactinfo = (props) => {
     function submitContact(contactInput) {
 
         
-        const sendgridUrl = 'http://localhost:5000/contact';
-        // const sendgridUrl = 'https://nick-strick-portfolio.herokuapp.com/contact'
+        // const sendgridUrl = 'http://localhost:5000/contact';
+        const sendgridUrl = 'https://nick-strick-portfolio.herokuapp.com/contact'
         zeroInputs();
 
         axios.post( sendgridUrl , contactInput)
